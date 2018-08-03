@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<!-- 别名定义 -->
+	<!-- <typeAliases>
+	针对单个定义别名
+	type:类型路径
+	alias:别名
+	
+		<typeAlias type="cn.itcast.mybatis.po.User" alias="user"/>
+	</typeAliases> -->
+	
+	<!-- 批量别名定义
+	指定报名，mabatis自动扫描包中的po类，自定义别名，别名就是类名（首字母大写或小写都可以）
+	 -->
+	 <typeAliases>
+	 	<package name="cn.itcast.ssm.po"/>
+	 </typeAliases>
+	 
+    <mappers>
+    	<mapper resource="config/sqlmap/user.xml"/>
+ 
+    	<!-- 通过mapper接口加载映射文件
+    	 遵循一些规范：需要将mapper接口类名和mapper.xml映射名称保持一直，并且在一个目录中
+    	 上边规范的前提是：使用的是mapper代理的方法 -->
+    	<!-- <mapper class="cn.itcast.mybatis.mapper.Usermapper"/> -->
+    	
+    	
+    	
+    </mappers>
+</configuration>
