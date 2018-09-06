@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+	<!-- 返回用户登录信息 -->
+	<bean className="RUserBean" notes="返回用户信息">
+		<attrs>
+			<attr type="string" name="token" notes="用户登录返回的token"
+				demoValue="aaae89b7d1c545eba5906c2d844a7440" />
+			<attr type="string" name="phone" notes="用户phone" demoValue="18888888888" />
+			<attr type="string" name="id" notes="用户uid" />
+			<attr type="string" name="name" notes="用户姓名" demoValue="18888888888" />
+			<attr type="int" name="gender" notes="用户性别，1：男，2：女" demoValue="1" />
+			<attr type="string" name="letter" notes="字符串的第一个字符的首字母" />
+			<attr type="string" name="icon" notes="用户头像"
+				demoValue="http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg" />
+			<attr type="int" name="isSetPwd" notes="是否设置密码:1已设置，0未设置"
+				demoValue="1" />
+			<attr type="RUserAuthBean" name="userAuth" notes="用户认证信息" />
+			<attr type="RSecAuthBean" name="secAuth" notes="用户保安认证信息" />
+			<attr type="int" name="authState" notes="是否认证-1未申请0，申请中 1已通过 1 未通过" />
+			<attr type="int" name="securityState" notes="是否是保安 -1未提交0提交1通过2未通过" />
+			<attr type="int" name="secAllotState" notes="保安分配状态 0未分配1未通过" />
+		</attrs>
+	</bean>
+
+	<!-- 用户认证信息 -->
+	<bean className="RUserAuthBean" notes="用户认证信息">
+		<attrs>
+			<attr type="int" name="id" notes="用户认证id" demoValue="1" />
+			<attr type="string" name="userId" notes="用户uid"
+				demoValue="aaae89b7d1c545eba5906c2d844a7440" />
+			<attr type="string" name="name" notes="用户姓名" demoValue="18888888888" />
+			<attr type="int" name="gender" notes="用户性别，1：男，2：女" demoValue="1" />
+			<attr type="string" name="idNo" notes="身份证" demoValue="370503199012020231" />
+			<attr type="string" name="ext" notes="认证提交信息对象"
+				demoValue="{'idfront':'http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg'}" />
+			<attr type="int" name="state" notes="0提交 1审核通过  2审核未通过"
+				demoValue="1" />
+			<attr type="string" name="reason" notes="驳回原因" demoValue="照片不符合" />
+			<attr type="long" name="actionTime" notes="审核时间" demoValue="1502517360" />
+			<attr type="string" name="actionId" notes="审核员" demoValue="123" />
+			<attr type="string" name="actionName" notes="审核员" demoValue="张三" />
+		</attrs>
+	</bean>
+
+	<!-- 保安状态信息 -->
+	<bean className="RSecStateBean" notes="保安状态信息">
+		<attrs>
+			<attr type="string" name="userId" notes="用户uid"
+				demoValue="aaae89b7d1c545eba5906c2d844a7440" />
+			<attr type="int" name="state" notes="0提交 1审核通过  2审核未通过"
+				demoValue="1" />
+			<attr type="string" name="reason" notes="驳回原因" demoValue="照片不符合" />
+		</attrs>
+	</bean>
+
+	<!-- 保安认证信息 -->
+	<bean className="RSecAuthBean" notes="用户保安信息">
+		<attrs>
+			<attr type="string" name="secId" notes="用户uid"
+				demoValue="aaae89b7d1c545eba5906c2d844a7440" />
+			<attr type="string" name="token" notes="用户登录返回的token"
+				demoValue="aaae89b7d1c545eba5906c2d844a7440" />
+			<attr type="string" name="phone" notes="用户phone" demoValue="18888888888" />
+			<attr type="string" name="name" notes="用户姓名" demoValue="18888888888" />
+			<attr type="int" name="gender" notes="用户性别，1：男，2：女" demoValue="1" />
+			<attr type="string" name="idNo" notes="身份证" demoValue="370503199012020231" />
+			<attr type="string" name="icon" notes="用户头像"
+				demoValue="http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg" />
+			<attr type="int" name="isSetPwd" notes="是否设置密码:1已设置，0未设置"
+				demoValue="1" />
+			<attr type="string" name="ext" notes="认证提交信息对象"
+				demoValue="{'idfront':'http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg'}" />
+
+			<attr type="int" name="state" notes="保安认证，-1未认证 0等待审核，1认证通过，2认证失败"
+				demoValue="0" />
+			<attr type="string" name="height" notes="身高" demoValue="177" />
+			<attr type="string" name="health" notes="健康1良好2一般" demoValue="1" />
+			<attr type="string" name="photo" notes="全身照"
+				demoValue="{'photo':'http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg'}" />
+			<attr type="string" name="station" notes="岗位1保安员、2安全官、3培训师，必填"
+				demoValue="1" />
+			<attr type="string" name="secNo" notes="保安编号" demoValue="1123123" />
+			<attr type="string" name="qualified"
+				notes="保安员资格1待培训、2初级保安员、3中级保安员、4高级保安员、5保安师、6高级保安师" demoValue="1" />
+			<attr type="string" name="reason" notes="审核失败原因" demoValue="身份证照片模糊" />
+			<attr type="string" name="propertyName" notes="物业" demoValue="123" />
+			<attr type="string" name="plotName" notes="小区" demoValue="张三" />
+			<attr type="string" name="plotBoxName" notes="岗亭" demoValue="张三" />
+
+			<attr type="long" name="actionTime" notes="审核时间" demoValue="1502517360" />
+			<attr type="string" name="actionId" notes="审核员" demoValue="123" />
+			<attr type="string" name="actionName" notes="审核员" demoValue="张三" />
+			<attr type="int" name="isAllot" notes="保安分配状态 0未分配1未通过" />
+		</attrs>
+	</bean>
+
+
+
+	<!-- 检查手机 -->
+	<bean className="RCheckCodeBean" notes="检查手机验证码">
+		<attrs>
+			<attr type="string" name="checkToken" notes="检查手机token，15分钟有效"
+				demoValue="5c05d94e91184272997ab2c0b7b54bb1" />
+		</attrs>
+	</bean>
+
+	<!-- 用户联系人信息 -->
+	<bean className="RUserContactBean" notes="用户联系人信息">
+		<attrs>
+			<attr type="string" name="id" notes="用户关系id" />
+			<attr type="string" name="userId" notes="用户id" />
+			<attr type="string" name="phone" notes="用户phone" demoValue="18888888888" />
+			<attr type="string" name="name" notes="用户姓名" demoValue="18888888888" />
+			<attr type="int" name="gender" notes="用户性别，1：男，2：女" demoValue="1" />
+			<attr type="string" name="letter" notes="字符串的第一个字符的首字母" />
+			<attr type="string" name="icon" notes="用户头像"
+				demoValue="http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg" />
+			<attr type="long" name="actionTime" notes="审核时间" demoValue="1502517360" />
+			<attr type="long" name="applyTime" notes="申请时间" demoValue="1502517360" />
+			<attr type="string" name="remark" notes="申请原因" demoValue="同事" />
+			<attr type="int" name="type" notes="用户状态，1：申请添加，2：自动添加"
+				demoValue="1" />
+			<attr type="int" name="state" notes="联系人状态：0申请中 1好友关系 2拒绝 3删除"
+				demoValue="1" />
+
+		</attrs>
+	</bean>
+
+
+	<!-- 用户分组信息 -->
+	<bean className="RUserGroupBean" notes="用户分组信息">
+		<attrs>
+			<attr type="int" name="id" notes="分组id" demoValue="1" />
+			<attr type="string" name="userId" notes="分组拥有人"
+				demoValue="5c05d94e91184272997ab2c0b7b54bb1" />
+			<attr type="string" name="name" notes="分组名" demoValue="常联系人" />
+			<attr type="string" name="icon" notes="分组icon"
+				demoValue="http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg" />
+			<attr type="string" name="tag" notes="分组标签" demoValue="保留字段" />
+			<attr type="int" name="num" notes="群人数" demoValue="11" />
+			<attr type="long" name="createTime" notes="创建时间时间戳到秒" demoValue="1502517360" />
+		</attrs>
+	</bean>
+
+	<!-- 用户地址列表信息 -->
+	<bean className="RUserAddrBean" notes="用户地址信息">
+		<attrs>
+			<attr type="int" name="id" notes="地址id" demoValue="1" />
+			<attr type="string" name="userId" notes="业主id"
+				demoValue="5c05d94e91184272997ab2c0b7b54bb1" />
+			<attr type="string" name="name" notes="姓名" demoValue="马书记" />
+			<attr type="string" name="phone" notes="电话号" demoValue="18010483452" />
+			<attr type="string" name="plotName" notes="小区名称" demoValue="智造大街" />
+			<attr type="int" name="plotType" notes="小区类型" demoValue="1居住2公司" />
+			<attr type="string" name="addr" notes="地址" demoValue="智造大街" />
+			<attr type="string" name="ext" notes="地址"
+				demoValue="{companyName:'公司',department:'部门',room:'房间号'}" />
+			<attr type="int" name="state" notes="审核状态" demoValue="type=1时的审核状态：0提交1通过2未通过" />
+			<attr type="int" name="type" notes="地址类型" demoValue="1居住地址 2企业地址" />
+			<attr type="int" name="showType" notes="是否显示" demoValue="1显示  0不显示" />
+			<attr type="string" name="reason" notes="驳回原因" demoValue="不同意" />
+		</attrs>
+	</bean>
+
+	<!-- 小区地址列表信息 -->
+	<bean className="RPlotInfoBean" notes="小区地址信息">
+		<attrs>
+			<attr type="int" name="id" notes="小区id" demoValue="1" />
+			<attr type="string" name="name" notes="小区名称" demoValue="智造大街" />
+			<attr type="string" name="address" notes="地址" demoValue="成府路45号中关村智造大街" />
+			<attr type="int" name="type" notes="小区类型：1居住区 2 企业" demoValue="1" />
+			<attr type="String" name="propertyName" notes="物业名称" demoValue="靖华物业" />
+		</attrs>
+	</bean>
+
+	<!-- 用户车辆信息 -->
+	<bean className="RCarInfoBean" notes="用户车辆信息">
+		<attrs>
+			<attr type="int" name="id" notes="id" demoValue="1" />
+			<attr type="string" name="uid" notes="用户uid"
+				demoValue="aaae89b7d1c545eba5906c2d844a7440" />
+			<attr type="string" name="no" notes="车牌号" demoValue="鲁E3f360" />
+			<attr type="string" name="letter" notes="第一个字符的首字母" demoValue="鲁" />
+			<attr type="long" name="creatTime" notes="创建时间 时间戳" demoValue="1510459412" />
+		</attrs>
+	</bean>
+
+	<!-- 工单请求 -->
+	<bean className="ROrderBean" notes="用户拜访工单信息">
+		<attrs>
+			<attr type="int" name="id" notes="id" demoValue="1" />
+			<attr type="string" name="userId" notes="申请人Id"
+				demoValue="bbbe89b7d1c545eba5906c2d844a7440" />
+			<attr type="string" name="userName" notes="申请人姓名" demoValue="张三" />
+			<attr type="string" name="userPhone" notes="申请人手机号" demoValue="15657432184" />
+			<attr type="string" name="checkContact" notes="来访人" demoValue="张三" />
+			<attr type="int" name="type" notes="工单类型：1门禁2快递" demoValue="1" />
+			<attr type="int" name="sType" notes="门禁类型：1请求门禁2发放门禁3第三方分享门禁"
+				demoValue="1" />
+			<attr type="string" name="content" notes="工单内容"
+				demoValue="{'visitTime':'2017-12-20','addrId':11222,'carInfo':['京AB123'],'remark':''}" />
+			<attr type="RPlotInfoBean" name="plot" notes="小区信息" />
+			<attr type="ROrderVistBean" name="visit" notes="用户门禁信息" />
+			<attr type="string" name="extAddr" notes="业主地址JSON"
+				demoValue="{'address':'2017-12-20'" />
+			<attr type="int" name="isExpire" notes="是否过期" demoValue="1" />
+			<attr type="long" name="expireTime" notes="过期时间" demoValue="1502517360" />
+			<attr type="long" name="createTime" notes="申请时间" demoValue="1502517360" />
+			、
+			<attr type="int" name="isView" notes="是否查看0未看1已看" demoValue="1" />
+			<attr type="long" name="viewTime" notes="查看时间" demoValue="1502517360" />
+
+		</attrs>
+	</bean>
+
+	<!-- 微信显示来访信息 -->
+	<bean className="ROrderWechatBean" notes="微信显示来访信息">
+		<attrs>
+			<attr type="int" name="id" notes="id" demoValue="1" />
+			<attr type="string" name="QRcodeUrl" notes="微信二维码url" demoValue="http://bluebox.com" />
+			<attr type="string" name="userId" notes="申请人Id"
+				demoValue="bbbe89b7d1c545eba5906c2d844a7440" />
+			<attr type="string" name="userName" notes="申请人姓名" demoValue="张三" />
+			<attr type="string" name="userPhone" notes="申请人手机号" demoValue="15657432184" />
+			<attr type="string" name="content" notes="工单内容"
+				demoValue="{'visitTime':'2017-12-20','addrId':11222,'carInfo':['京AB123'],'remark':''}" />
+			<attr type="string" name="extAddr" notes="业主地址JSON"
+				demoValue="{'address':'2017-12-20'" />
+			<attr type="int" name="isExpire" notes="是否过期" demoValue="1" />
+			<attr type="long" name="expireTime" notes="过期时间" demoValue="1502517360" />
+			<attr type="long" name="createTime" notes="申请时间" demoValue="1502517360" />
+			、
+		</attrs>
+	</bean>
+
+
+
+	<!-- 工单请求 -->
+	<bean className="RComeOrderBean" notes="用户来访工单信息">
+		<attrs>
+			<attr type="int" name="id" notes="id" demoValue="1" />
+			<attr type="string" name="userId" notes="申请人Id"
+				demoValue="bbbe89b7d1c545eba5906c2d844a7440" />
+			<attr type="string" name="userName" notes="申请人姓名" demoValue="张三" />
+			<attr type="string" name="checkContact" notes="来访人" demoValue="张三" />
+			<attr type="string" name="userPhone" notes="申请人手机号" demoValue="15657432184" />
+			<attr type="int" name="type" notes="工单类型：1门禁2快递" demoValue="1" />
+			<attr type="int" name="sType" notes="门禁类型：1请求门禁2发放门禁3第三方分享门禁"
+				demoValue="1" />
+			<attr type="string" name="content" notes="工单内容"
+				demoValue="{'visitTime':'2017-12-20','addrId':11222,'carInfo':['京AB123'],'remark':''}" />
+			<attr type="RPlotInfoBean" name="plot" notes="小区信息" />
+			<attr type="list" name="visit" objName="ROrderVistBean" notes="用户门禁信息" />
+			<attr type="string" name="extAddr" notes="业主地址JSON"
+				demoValue="{'address':'2017-12-20'" />
+			<attr type="int" name="isExpire" notes="是否过期" demoValue="1" />
+			<attr type="long" name="expireTime" notes="过期时间" demoValue="1502517360" />
+			<attr type="long" name="createTime" notes="申请时间" demoValue="1502517360" />
+			<attr type="int" name="visitNum" notes="来访次数" demoValue="1" />
+			<attr type="int" name="isView" notes="是否查看0未看1已看" demoValue="1" />
+			<attr type="long" name="viewTime" notes="查看时间" demoValue="1502517360" />
+
+		</attrs>
+	</bean>
+
+
+	<!-- 门禁信息 -->
+	<bean className="ROrderVistBean" notes="用户门禁信息">
+		<attrs>
+			<attr type="int" name="state" notes="门禁审核状态：0提交1同意2不同意"
+				demoValue="1" />
+			<attr type="string" name="phone" notes="用户phone" demoValue="18888888888" />
+			<attr type="string" name="ovId" notes="拜访Id"
+				demoValue="ccce89b7d1c545eba5906c2d844a7440" />
+			<attr type="string" name="ovUid" notes="拜访对象Id"
+				demoValue="aaaa89b7d1c545eba5906c2d844a7440" />
+			<attr type="string" name="name" notes="拜访对象姓名" demoValue="zhangsan" />
+			<attr type="string" name="reason" notes="拒绝原因" demoValue="不认识" />
+			<attr type="string" name="icon" notes="拜访对象头像"
+				demoValue="http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg" />
+			<attr type="long" name="visitTime" notes="拜访时间" demoValue="1502517360" />
+			<attr type="int" name="isView" notes="是否查看0未看1已看" demoValue="1" />
+			<attr type="long" name="viewTime" notes="查看时间" demoValue="1502517360" />
+			<attr type="long" name="actionTime" notes="审核时间" demoValue="1502517360" />
+			<attr type="int" name="visitNum" notes="来访次数" demoValue="1" />
+		</attrs>
+	</bean>
+
+	<!-- 门禁信息 -->
+	<bean className="ROrderQRcodeBean" notes="用户二维码code">
+		<attrs>
+			<attr type="string" name="QRcodeUrl" notes="二维码QRcode"
+				demoValue="ccce89b7d1c545eba5906c2d844a7440" />
+		</attrs>
+	</bean>
+
+	<!-- 门禁记录 -->
+	<bean className="RVisitLogBean" notes="保安扫码门禁记录信息">
+		<attrs>
+			<attr type="string" name="orderNo" notes="拜访编号" demoValue="MJ20171212" />
+			<attr type="string" name="authSecName" notes="保安名" demoValue="王五" />
+			<attr type="string" name="plotName" notes="小区名" demoValue="智造大街" />
+			<attr type="string" name="plotBoxName" notes="岗亭" demoValue="南门" />
+			<attr type="long" name="authTime" notes="验证时间" demoValue="123123123" />
+			<attr type="string" name="content" notes="访问内容"
+				demoValue="{'visitTime':'2017-12-20','addrId':11222,'carInfo':['京AB123'],'remark':''}" />
+			<attr type="string" name="extAddr" notes="业主地址JSON"
+				demoValue="{'address':'2017-12-20'" />
+			<attr type="int" name="state" notes="通过状态：1同意2不同意" demoValue="1" />
+			<attr type="string" name="reason" notes="不能通过原因" demoValue="非本人" />
+		</attrs>
+	</bean>
+
+
+
+
+
+	<!-- 全国区域配置信息 -->
+	<bean className="RAreaBean" notes="全国区域配置信息">
+		<attrs>
+			<attr type="string" name="version" notes="七牛token" demoValue="123" />
+			<attr type="string" name="url" notes="全国区域存放地址，json文件链接"
+				demoValue="http://os4z3g2v6.bkt.clouddn.com/area_v1.json" />
+		</attrs>
+	</bean>
+
+
+	<!-- 七牛配置信息 -->
+	<bean className="RQiNiuConfigBean" notes="七牛配置信息">
+		<attrs>
+			<attr type="string" name="token" notes="七牛token" demoValue="123" />
+			<attr type="string" name="qiniuLinkUrl" notes="七牛链"
+				demoValue="http://os4z3g2v6.bkt.clouddn.com/" />
+			<attr type="string" name="qiniuCDNUrl" notes="七牛CDN链"
+				demoValue="http://qnimg.zpark-imway.com/" />
+		</attrs>
+	</bean>
+
+	<!-- 七牛返回的信息 -->
+	<bean className="RQiniuFileBean" notes="七牛返回的信息">
+		<attrs>
+			<attr type="string" name="key" notes="key" demoValue="key" />
+			<attr type="string" name="url" notes="图片url地址"
+				demoValue="http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg" />
+			<attr type="int" name="imgH" notes="高度" demoValue="100" />
+			<attr type="int" name="imgW" notes="宽度" demoValue="100" />
+			<attr type="string" name="format" notes="文件格式" demoValue="jpeg" />
+		</attrs>
+	</bean>
+
+	<!-- 返回fdfs文件的信息 -->
+	<bean className="RFdfsFileBean" notes="image返回的信息">
+		<attrs>
+			<attr type="string" name="key" notes="文件名" demoValue="key" />
+			<attr type="string" name="group" notes="组名" demoValue="group1" />
+			<attr type="string" name="groupPath" notes="组内路径"
+				demoValue="M00/00/00/rBBJClp9OXWAa_3kAAZ3LXvuwT8782.jpg" />
+			<attr type="string" name="url" notes="图片url地址"
+				demoValue="http://172.16.73.10:8888/group1/M00/00/00/rBBJClp9TrqAWHs5AAonaeOiXZ4752.jpg" />
+			<attr type="string" name="format" notes="文件格式" demoValue="jpeg" />
+		</attrs>
+	</bean>
+
+	<!-- 版本升级信息 -->
+	<bean className="RVersionBean" notes="版本升级信息">
+		<attrs>
+			<attr type="int" name="id" notes="id" demoValue="1" />
+			<attr type="int" name="vercode" notes="版本号" demoValue="2" />
+			<attr type="String" name="vername" notes="版本名称" demoValue="第二版本" />
+			<attr type="String" name="url" notes="下载url地址"
+				demoValue="http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg" />
+			<attr type="String" name="content" notes="更新内容" demoValue="更新了已知的bug" />
+			<attr type="double" name="fsize" notes="更新大小" demoValue="10000" />
+			<attr type="String" name="fmd5" notes="文件md5值"
+				demoValue="ccce89b7d1c545eba5906c2d844a7440" />
+			<attr type="long" name="createTime" notes="更新时间" demoValue="10000" />
+			<attr type="int" name="verport" notes="版本端1用户端2管理端" demoValue="2" />
+
+		</attrs>
+	</bean>
+
+	<!-- 版本升级信息 -->
+	<bean className="RMsgBean" notes="消息信息">
+		<attrs>
+			<attr type="int" name="mid" notes="id" demoValue="1" />
+			<attr type="String" name="tuid" notes="目标id"
+				demoValue="ccce89b7d1c545eba5906c2d844a7440" />
+			<attr type="String" name="tname" notes="目标姓名" demoValue="张三" />
+			<attr type="String" name="title" notes="消息标题" demoValue="实名认证" />
+			<attr type="String" name="content" notes="消息内容" demoValue="你已通过实名认证" />
+			<attr type="int" name="type" notes="消息类型" demoValue="type=1" />
+			<attr type="String" name="extras" notes="消息传递内容" demoValue="" />
+			<attr type="String" name="addTimeStr" notes="发送时间" demoValue="昨天" />
+			<attr type="long" name="addTime" notes="发送时间戳" demoValue="563234234" />
+			<attr type="int" name="isRead" notes="是否已读0未读1已读" demoValue="0" />
+			<attr type="int" name="loginPort" notes="所属手机端：1用户2管理"
+				demoValue="1" />
+		</attrs>
+	</bean>
+
+</beans>

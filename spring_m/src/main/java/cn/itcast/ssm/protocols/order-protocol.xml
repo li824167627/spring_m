@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocols>
+
+	<!-- 申请门禁 -->
+	<protocol name="apply" requestMapping="/v1/apply" resType="json"
+		notes="申请门禁" state="1" requestName="ApplyOrderParam" resDataType="base">
+		<request>
+			<param name="token" type="string" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="visitDate" type="string" demoValue="1502517360"
+				notes="拜访日期">
+				<notEmpty message="拜访时间不能为空"></notEmpty>
+			</param>
+			<param name="userId" type="string" demoValue="67e13776f6524d37bca975e5319b0dbc"
+				notes="用户id">
+				<notEmpty message="请选择拜访用户"></notEmpty>
+			</param>
+			<param name="content" type="String"
+				demoValue="{'visitTime':'2017-12-20',//拜访时间'address':'',//业主地址'carInfo':['京AB123'],//车辆信息'remark':''}"
+				notes="拜访内容">
+			</param>
+		</request>
+	</protocol>
+
+
+	<!-- 朋友来访 -->
+	<protocol name="shareFriend" requestMapping="/v1/shareFriend"
+		resType="json" notes="给我的朋友和群组来访，发放门禁" state="1" requestName="ShareFriendOrderParam"
+		resDataType="base">
+		<request>
+			<param name="token" type="string" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="visitDate" type="string" demoValue="1502517360"
+				notes="来访日期">
+				<notEmpty message="来访时间不能为空"></notEmpty>
+			</param>
+			<param name="addrId" type="string" demoValue="2" notes="个人地址id">
+				<notEmpty message="地址不能为空"></notEmpty>
+			</param>
+			<param name="content" type="String"
+				demoValue="{'visitTime':'2017-12-20',//拜访时间'addrId':'11222',//业主地址'carInfo':['京AB123'],//车辆信息'remark':''}"
+				notes="拜访内容">
+			</param>
+			<param name="type" type="string" demoValue="2" notes="类型:1 好友，2群组">
+				<pattern regexp="^1|2$" message="类型不正确：1 好友，2群组" />
+			</param>
+			<param name="groupId" type="string" demoValue="2" notes="分组Id">
+			</param>
+			<param name="userIds" type="string" demoValue="['424','1241','123']"
+				notes="用户Id">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 分享 -->
+	<protocol name="shareWechat" requestMapping="/v1/shareWechat"
+		resType="json" notes="给微信好友分享门禁" state="1" requestName="ShareWechatOrderParam"
+		resDataType="object" responseName="ROrderWechatBean">
+		<request>
+			<param name="token" type="string" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="visitDate" type="string" demoValue="1502517360"
+				notes="来访日期">
+				<notEmpty message="来访时间不能为空"></notEmpty>
+			</param>
+			<param name="addrId" type="string" demoValue="2" notes="个人地址id">
+				<notEmpty message="地址不能为空"></notEmpty>
+			</param>
+			<param name="content" type="String"
+				demoValue="{'visitTime':'2017-12-20',//拜访时间'addrId':'11222',//业主地址'carInfo':['京AB123'],//车辆信息'remark':''}"
+				notes="拜访内容">
+			</param>
+			<param name="name" type="string" demoValue="张三" notes="type=2分享微信时，输入姓名">
+			</param>
+			<param name="phone" type="string" demoValue="15765272512"
+				notes="type=2分享微信时，输入手机号">
+			</param>
+		</request>
+	</protocol>
+
+
+	<!-- 同意不同意 -->
+	<protocol name="checkOrder" requestMapping="/v1/checkOrder"
+		resType="json" notes="审核门禁" state="1" requestName="CheckOrderParam"
+		resDataType="base">
+		<request>
+			<param name="token" type="string" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="oid" type="string" demoValue="1" notes="门禁id">
+				<notEmpty message="门禁id不能为空"></notEmpty>
+			</param>
+			<param name="addrId" type="string" demoValue="2" notes="个人地址id">
+			</param>
+			<param name="state" type="string" demoValue="1" notes="门禁状态：1通过，2禁止">
+				<pattern regexp="^1|2$" message="状态不正确：1通过，2禁止" />
+			</param>
+			<param name="reason" type="string" demoValue="不认识" notes="审核拒绝原因">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 获取用户门禁 -->
+	<protocol name="getList" requestMapping="/v1/getList" resType="json"
+		notes="获取门禁列表" state="1" requestName="GetOrderListParam" resDataType="list"
+		responseName="ROrderBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="time" type="string" demoValue="2017-12-12" notes="搜索来访时间">
+			</param>
+			<param name="name" type="string" demoValue="张" notes="搜索姓名">
+			</param>
+			<param name="page" type="int" demoValue="0" notes="页码，默认从0开始">
+			</param>
+			<param name="pageSize" type="int" demoValue="20" notes="每页数量，默认20">
+			</param>
+		</request>
+	</protocol>
+
+	<protocol name="getComeList" requestMapping="/v1/getComeList"
+		resType="json" notes="获取来访门禁列表" state="1" requestName="GetComeOrderListParam"
+		resDataType="list" responseName="RComeOrderBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="time" type="string" demoValue="2017-12-12" notes="搜索来访时间">
+			</param>
+			<param name="name" type="string" demoValue="张" notes="搜索姓名">
+			</param>
+			<param name="page" type="int" demoValue="0" notes="页码，默认从0开始">
+			</param>
+			<param name="pageSize" type="int" demoValue="20" notes="每页数量，默认20">
+			</param>
+		</request>
+	</protocol>
+
+	<protocol name="setRead" requestMapping="/v1/setRead" resType="json"
+		notes="设置消息已读" state="1" requestName="SetOrderReadParam" resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="oid" type="int" demoValue="1" notes="访问信息id">
+			</param>
+			<param name="type" type="int" demoValue="0" notes="页面：1拜访2来访">
+			</param>
+		</request>
+	</protocol>
+
+</protocols>

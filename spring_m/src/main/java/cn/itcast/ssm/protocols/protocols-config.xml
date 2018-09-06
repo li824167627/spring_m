@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocols-config distPath="src/main/java" packageName="com.fm.portal.controller"
+	resPackageName="res/bean" reqPackageName="req"
+	xmlPath="src/main/java/com/fm/portal/protocols">
+	<protocolFiles>
+		<!-- 账户-相关接口 -->
+		<protocols-file fileName="account-protocol.xml"
+			toCreate="true" className="AccountController" requestMapping="/app/account"
+			version="1.0" notes="账户-相关接口" />
+
+		<!-- 用户-相关接口 -->
+		<protocols-file fileName="user-protocol.xml" toCreate="true"
+			className="UserController" requestMapping="/app/user" version="1.0"
+			notes="用户-相关接口" />
+
+		<!-- 文件-相关接口 -->
+		<protocols-file fileName="file-protocol.xml" toCreate="true"
+			className="FileController" requestMapping="/app/file" version="1.0"
+			notes="文件-相关接口" />
+
+		<!-- 公共-相关接口 -->
+		<protocols-file fileName="common-protocol.xml"
+			toCreate="true" className="CommonController" requestMapping="/app/common"
+			version="1.0" notes="公共-相关接口" />
+
+	</protocolFiles>
+
+	<beanFiles>
+		<bean-file fileName="beans.xml" />
+	</beanFiles>
+
+	<!-- 返回业务码 -->
+	<rescodeFile fileName="rescodes.xml" />
+
+	<resBean resCode="rescode" resMsg="msg" resData="data"
+		toCreate="false" />
+
+</protocols-config>

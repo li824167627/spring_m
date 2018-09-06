@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<webConfig name="webPath">
+		<value>http://47.93.144.246:8088/security-app</value>
+	</webConfig>
+	<webConfig name="webDomain">
+		<value>bluebox.harpbj.com</value>
+	</webConfig>
+
+	<!-- 微信开放应用配置 -->
+	<webConfig name="wechatConfigAppId">
+		<value>wx65260799b23bbb8c</value>
+	</webConfig>
+	<webConfig name="wechatConfigAppSecret">
+		<value>b951c6e819c10305544919d17911689d</value>
+	</webConfig>
+	<webConfig name="wechatConfigMchId">
+		<value>1491126512</value>
+	</webConfig>
+	<webConfig name="wechatConfigMchKey">
+		<value>Haoanruipu2017bijiang888Greatera</value>
+	</webConfig>
+	<webConfig name="wechatConfigPayAppCallbackRecharge">
+		<value>/app/pay/wechatAppCallbackRecharge</value>
+	</webConfig>
+
+	<!-- 支付宝配置 -->
+	<webConfig name="alipayGateWay">
+		<value>https://openapi.alipay.com/gateway.do</value>
+	</webConfig>
+	<!-- 支付宝账户 -->
+	<webConfig name="alipay_account">
+		<value>haoanruipu_peking@163.com</value>
+	</webConfig>
+	<!-- 支付宝应用appid -->
+	<webConfig name="alipay_appId">
+		<value>2017111309899414</value>
+	</webConfig>
+	<!-- 支付宝公钥(RSA256withRsa) -->
+	<webConfig name="alipay_publicKey">
+		<value>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgXEDDAQbVYcpRFzTkafU/nNzOGZIsyzO64NQhCqC/qNc/6Q9lt4sEytl4rPqOXJqECfSfV4wcaDhJCMe76RjncJMbcpAujraBTlcyozTZldBqRLF40rwq4VGicSYtbogkJWYN3bV1jVmzD9EReO3hvuGcA1EN4OoGDcfnGBd6ptxpnKup4e5MhLll7gDc/zZZN0s5TQKeFQMu8/zxFcysqJxcmh1iGViVr57brQhE8JK+9HuRT0kHRVsY0DZHSb8baUbiFtxMKYofDy5I7aRwhGQuc6c2ey4iPzAvd+KFnsbwSlDjKMR8jJgWEsdPq5Ie2xwp8nWH7ED6fldOafg1wIDAQAB
+		</value>
+	</webConfig>
+	<!-- 应用公钥 RSA2(SHA256)密钥 -->
+	<webConfig name="alipay_appPublicKey">
+		<value>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsSCxI7vLQxghvsT9br1WbMG6c4lmcmnqTqtiisEJiiSCR3OXNUrmry3S7bMVRBZM/jl2agkN+SwMdh66N7t49vxiTUqofgdIiyny8GgRL79UCHalb2qiQWNWzN2AtOGH6BJxLqUmBKts0B9aOdBANVv1rQiZFnQiGe+bOXkln6qvjdAvDoSrPepOJWtFjZB3chs7oDpmFyvqKY1U7o42OsiR3AX/CQu8s4anhokBUb25034O/SxStrVg4inN+A6FdQ4ocUaRaXZ6K3Im5G6aDF2WgDeKhGL/zdc6Be+0i1FhCIgizbccgQmLgaAVGInuB/wzMWaymiAX630MmZUYFQIDAQAB
+		</value>
+	</webConfig>
+	<!-- 应用私钥 RSA2(SHA256)密钥 -->
+	<webConfig name="alipay_appPrivateKey">
+		<value>MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxILEju8tDGCG+xP1uvVZswbpziWZyaepOq2KKwQmKJIJHc5c1SuavLdLtsxVEFkz+OXZqCQ35LAx2Hro3u3j2/GJNSqh+B0iLKfLwaBEvv1QIdqVvaqJBY1bM3YC04YfoEnEupSYEq2zQH1o50EA1W/WtCJkWdCIZ75s5eSWfqq+N0C8OhKs96k4la0WNkHdyGzugOmYXK+opjVTujjY6yJHcBf8JC7yzhqeGiQFRvbnTfg79LFK2tWDiKc34DoV1DihxRpFpdnorcibkbpoMXZaAN4qEYv/N1zoF77SLUWEIiCLNtxyBCYuBoBUYie4H/DMxZrKaIBfrfQyZlRgVAgMBAAECggEAHLuH4JsK+uREPRTpY3hVN6kpXKqSMscZmg9VGdr8eCs58us+QQfYadxOFf7x2Syg6rBZlBPJ73yEvPh5DqdblP0V2SHeOStnSiPQ48yN1Sf9Mq5EYdFzZpX9s5fO1AitqiirsXxasXE5Yn1jfnNYpw82yA3X/3txOLHUhTswrjiVwFR7/I2kdSmNfIr4T+AWJkNLqWP6Fwuh684KiHbxAABSOZifLGI/UW8DKXPu3S0Bb/aJV50e0uMEwes9K5eJbrqOjwJGcI9PtOP3hZ9ZkHPuJlaD6YBtadzgngL77x/fsjRdEPh00+Wit23dnB6R3bVLR/yPMPZLEUT6kXPFoQKBgQDenofK33T0FkVsrwRDM7dQCh/+/S9G4cKOFauSbjDjiKVKcX/u/hOsWm2k5SEKYPDQaCePHO0dwZX66O8sjqCn066LFcJYhmX7YdyS5ZNh9GXsUwVgJTf0oBQ3DPuA/NPcX2umMY2fqe3LVL8gqkRYavLKB/Fr7iyb6ht0/F+qrQKBgQDLr+vXn/vfcj7Jqy0G25WhrbtgjGqdGd7AxZjV+Gsoe+zBVnfigabY8ko9l6zgHBOGcvjX0HyyroW5m1Cpe530NiSonRFSwOBHlwwRg1m1p3m1iT1hijEdLxpvuQeckbKYksNbtT3K2kafkZfxFXuMmcIJUJGXKQmpbol/YPN4CQKBgQDXBUAbj2GjMK+1ngX78sOoJ19oJpu3Vu9X1U52jL/jxWQBV0c+S2ItItqsXjNfluqCIVe0Pzg3eXendb0tyEUcVLVN2aJxZr6x43/s0plcD3cyn62dg9VcDhH4ai2yFIF9ZRzQ1SP5h2QK9Lv2jP6eeA4xXSKuIMotfh0vDWRJsQKBgARipj4/OIoICKgI4nBKW/9eITGj9EurmesmlfLNZWk6uc8z0GL1DaWQGd8Xm+Y7VIRJh2gGGhkyvrhPSr5LZgwy+jkTIKNaebmw29aosE7D60/oQ4UNF5+cOwJ6xlotnN3CEyivT0RFzM10sgPDxaQyT0YqEOhjPs0CDz3J1ZQZAoGBAMmhdZHxseKzGqPXLMR7IFU92lJqDGOS/uF6Ep9LYa+prHg9nWIo1h1rYS7ZOi3CgCUUS0K4XndnybE8QHlwhCPFCt5z61JQVTzv26PFOVbnOio/t7zratb6yyhQ0aSwJ145E0K/wFOk0MlOvJ2HH+CFi0EYPVOFvGRnBXnVfapQ
+		</value>
+	</webConfig>
+	<!-- 接口内容加密方式 AES 密钥 -->
+	<webConfig name="alipay_contentAESKey">
+		<value>tRgZhsX3Xastv+uB6nhQ3Q==</value>
+	</webConfig>
+	<!-- 加密类型 -->
+	<webConfig name="alipay_signType">
+		<value>RSA2</value>
+	</webConfig>
+	<!-- 编码 -->
+	<webConfig name="alipay_charset">
+		<value>UTF-8</value>
+	</webConfig>
+	<webConfig name="alipayAppCallbackRecharge">
+		<value>/app/pay/alipayAppCallbackRecharge</value>
+	</webConfig>
+
+	<!-- 阿里短信服务 -->
+	<webConfig name="accessKeyId">
+		<value>LTAIOD3PolQuf26y</value>
+	</webConfig>
+	<webConfig name="accessKeySecret">
+		<value>AkkCPoXiZOmOgDOWbjd5IXu20YVye4</value>
+	</webConfig>
+	<webConfig name="signName">
+		<value>北京浩安瑞普</value>
+	</webConfig>
+
+
+	<!-- 极光推送服务 -->
+	<webConfig name="appKey">
+		<value>869ff618acef846227b24b6f</value>
+	</webConfig>
+	<webConfig name="masterSecret">
+		<value>92fb5751c7960a9d22bb9021</value>
+	</webConfig>
+
+	<webConfig name="appKey4Sec">
+		<value>1a0ed2c8c5f65821242cd7df</value>
+	</webConfig>
+	<webConfig name="masterSecret4Sec">
+		<value>3f34f7c67fddc4d237c134d4</value>
+	</webConfig>
+
+	<appVersion name="iosAppVersion">
+		<value>1.0.5</value>
+	</appVersion>
+	<appVersion name="androidAppVersion">
+		<value>1.0.0</value>
+	</appVersion>
+
+
+</config>

@@ -4,7 +4,11 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-
+	<!-- 加载属性文件 -->
+	<properties resource="db.properties">
+	<!-- 还可以配置一些属性名和属性值 -->
+		<!-- <property name="" value=""/> -->
+	</properties>
 	<!-- 别名定义 -->
 	<!-- <typeAliases>
 	针对单个定义别名
@@ -18,17 +22,31 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	指定报名，mabatis自动扫描包中的po类，自定义别名，别名就是类名（首字母大写或小写都可以）
 	 -->
 	 <typeAliases>
-	 	<package name="cn.itcast.ssm.po"/>
+	 	<package name="cn.itcast.ssm.bean.po"/>
 	 </typeAliases>
 	 
+	<!-- <environments default="development">
+        <environment id="development">
+        使用JDBC事务管理，事务控制由mybatis
+            <transactionManager type="JDBC"/>
+            数据库连接池，由mybatis
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>  
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments> -->
    <!--  <mappers>
-    	<mapper resource="config/sqlmap/user.xml"/>
- 
+    	<mapper resource="resources/ItemsMapperCustom.xml"/>
+    	
     	通过mapper接口加载映射文件
     	 遵循一些规范：需要将mapper接口类名和mapper.xml映射名称保持一直，并且在一个目录中
     	 上边规范的前提是：使用的是mapper代理的方法
     	<mapper class="cn.itcast.mybatis.mapper.Usermapper"/>
     	
+    	<package name="cn.itcast.ssm.mapper"/>
     	
     	
     </mappers> -->

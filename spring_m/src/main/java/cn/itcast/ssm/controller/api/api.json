@@ -1,0 +1,2841 @@
+{
+	"beans": [
+		{
+			"attrs": [
+				{
+					"demoValue": "aaae89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "token",
+					"notes": "用户登录返回的token",
+					"type": "string"
+				},
+				{
+					"demoValue": "18888888888",
+					"isCustom": false,
+					"name": "phone",
+					"notes": "用户phone",
+					"type": "string"
+				},
+				{
+					"isCustom": false,
+					"name": "id",
+					"notes": "用户uid",
+					"type": "string"
+				},
+				{
+					"demoValue": "18888888888",
+					"isCustom": false,
+					"name": "name",
+					"notes": "用户姓名",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "gender",
+					"notes": "用户性别，1：男，2：女",
+					"type": "int"
+				},
+				{
+					"isCustom": false,
+					"name": "letter",
+					"notes": "字符串的第一个字符的首字母",
+					"type": "string"
+				},
+				{
+					"demoValue": "http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg",
+					"isCustom": false,
+					"name": "icon",
+					"notes": "用户头像",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "isSetPwd",
+					"notes": "是否设置密码:1已设置，0未设置",
+					"type": "int"
+				},
+				{
+					"isCustom": false,
+					"name": "userAuth",
+					"notes": "用户认证信息",
+					"type": "RUserAuthBean"
+				},
+				{
+					"isCustom": false,
+					"name": "secAuth",
+					"notes": "用户保安认证信息",
+					"type": "RSecAuthBean"
+				},
+				{
+					"isCustom": false,
+					"name": "authState",
+					"notes": "是否认证-1未申请0，申请中 1已通过 1 未通过",
+					"type": "int"
+				},
+				{
+					"isCustom": false,
+					"name": "securityState",
+					"notes": "是否是保安 -1未提交0提交1通过2未通过",
+					"type": "int"
+				},
+				{
+					"isCustom": false,
+					"name": "secAllotState",
+					"notes": "保安分配状态 0未分配1未通过",
+					"type": "int"
+				}
+			],
+			"className": "RUserBean",
+			"notes": "返回用户信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "id",
+					"notes": "用户认证id",
+					"type": "int"
+				},
+				{
+					"demoValue": "aaae89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "userId",
+					"notes": "用户uid",
+					"type": "string"
+				},
+				{
+					"demoValue": "18888888888",
+					"isCustom": false,
+					"name": "name",
+					"notes": "用户姓名",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "gender",
+					"notes": "用户性别，1：男，2：女",
+					"type": "int"
+				},
+				{
+					"demoValue": "370503199012020231",
+					"isCustom": false,
+					"name": "idNo",
+					"notes": "身份证",
+					"type": "string"
+				},
+				{
+					"demoValue": "{'idfront':'http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg'}",
+					"isCustom": false,
+					"name": "ext",
+					"notes": "认证提交信息对象",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "state",
+					"notes": "0提交 1审核通过  2审核未通过",
+					"type": "int"
+				},
+				{
+					"demoValue": "照片不符合",
+					"isCustom": false,
+					"name": "reason",
+					"notes": "驳回原因",
+					"type": "string"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "actionTime",
+					"notes": "审核时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "123",
+					"isCustom": false,
+					"name": "actionId",
+					"notes": "审核员",
+					"type": "string"
+				},
+				{
+					"demoValue": "张三",
+					"isCustom": false,
+					"name": "actionName",
+					"notes": "审核员",
+					"type": "string"
+				}
+			],
+			"className": "RUserAuthBean",
+			"notes": "用户认证信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "aaae89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "userId",
+					"notes": "用户uid",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "state",
+					"notes": "0提交 1审核通过  2审核未通过",
+					"type": "int"
+				},
+				{
+					"demoValue": "照片不符合",
+					"isCustom": false,
+					"name": "reason",
+					"notes": "驳回原因",
+					"type": "string"
+				}
+			],
+			"className": "RSecStateBean",
+			"notes": "保安状态信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "aaae89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "secId",
+					"notes": "用户uid",
+					"type": "string"
+				},
+				{
+					"demoValue": "aaae89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "token",
+					"notes": "用户登录返回的token",
+					"type": "string"
+				},
+				{
+					"demoValue": "18888888888",
+					"isCustom": false,
+					"name": "phone",
+					"notes": "用户phone",
+					"type": "string"
+				},
+				{
+					"demoValue": "18888888888",
+					"isCustom": false,
+					"name": "name",
+					"notes": "用户姓名",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "gender",
+					"notes": "用户性别，1：男，2：女",
+					"type": "int"
+				},
+				{
+					"demoValue": "370503199012020231",
+					"isCustom": false,
+					"name": "idNo",
+					"notes": "身份证",
+					"type": "string"
+				},
+				{
+					"demoValue": "http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg",
+					"isCustom": false,
+					"name": "icon",
+					"notes": "用户头像",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "isSetPwd",
+					"notes": "是否设置密码:1已设置，0未设置",
+					"type": "int"
+				},
+				{
+					"demoValue": "{'idfront':'http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg'}",
+					"isCustom": false,
+					"name": "ext",
+					"notes": "认证提交信息对象",
+					"type": "string"
+				},
+				{
+					"demoValue": "0",
+					"isCustom": false,
+					"name": "state",
+					"notes": "保安认证，-1未认证 0等待审核，1认证通过，2认证失败",
+					"type": "int"
+				},
+				{
+					"demoValue": "177",
+					"isCustom": false,
+					"name": "height",
+					"notes": "身高",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "health",
+					"notes": "健康1良好2一般",
+					"type": "string"
+				},
+				{
+					"demoValue": "{'photo':'http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg'}",
+					"isCustom": false,
+					"name": "photo",
+					"notes": "全身照",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "station",
+					"notes": "岗位1保安员、2安全官、3培训师，必填",
+					"type": "string"
+				},
+				{
+					"demoValue": "1123123",
+					"isCustom": false,
+					"name": "secNo",
+					"notes": "保安编号",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "qualified",
+					"notes": "保安员资格1待培训、2初级保安员、3中级保安员、4高级保安员、5保安师、6高级保安师",
+					"type": "string"
+				},
+				{
+					"demoValue": "身份证照片模糊",
+					"isCustom": false,
+					"name": "reason",
+					"notes": "审核失败原因",
+					"type": "string"
+				},
+				{
+					"demoValue": "123",
+					"isCustom": false,
+					"name": "propertyName",
+					"notes": "物业",
+					"type": "string"
+				},
+				{
+					"demoValue": "张三",
+					"isCustom": false,
+					"name": "plotName",
+					"notes": "小区",
+					"type": "string"
+				},
+				{
+					"demoValue": "张三",
+					"isCustom": false,
+					"name": "plotBoxName",
+					"notes": "岗亭",
+					"type": "string"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "actionTime",
+					"notes": "审核时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "123",
+					"isCustom": false,
+					"name": "actionId",
+					"notes": "审核员",
+					"type": "string"
+				},
+				{
+					"demoValue": "张三",
+					"isCustom": false,
+					"name": "actionName",
+					"notes": "审核员",
+					"type": "string"
+				},
+				{
+					"isCustom": false,
+					"name": "isAllot",
+					"notes": "保安分配状态 0未分配1未通过",
+					"type": "int"
+				}
+			],
+			"className": "RSecAuthBean",
+			"notes": "用户保安信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+					"isCustom": false,
+					"name": "checkToken",
+					"notes": "检查手机token，15分钟有效",
+					"type": "string"
+				}
+			],
+			"className": "RCheckCodeBean",
+			"notes": "检查手机验证码"
+		},
+		{
+			"attrs": [
+				{
+					"isCustom": false,
+					"name": "id",
+					"notes": "用户关系id",
+					"type": "string"
+				},
+				{
+					"isCustom": false,
+					"name": "userId",
+					"notes": "用户id",
+					"type": "string"
+				},
+				{
+					"demoValue": "18888888888",
+					"isCustom": false,
+					"name": "phone",
+					"notes": "用户phone",
+					"type": "string"
+				},
+				{
+					"demoValue": "18888888888",
+					"isCustom": false,
+					"name": "name",
+					"notes": "用户姓名",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "gender",
+					"notes": "用户性别，1：男，2：女",
+					"type": "int"
+				},
+				{
+					"isCustom": false,
+					"name": "letter",
+					"notes": "字符串的第一个字符的首字母",
+					"type": "string"
+				},
+				{
+					"demoValue": "http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg",
+					"isCustom": false,
+					"name": "icon",
+					"notes": "用户头像",
+					"type": "string"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "actionTime",
+					"notes": "审核时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "applyTime",
+					"notes": "申请时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "同事",
+					"isCustom": false,
+					"name": "remark",
+					"notes": "申请原因",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "type",
+					"notes": "用户状态，1：申请添加，2：自动添加",
+					"type": "int"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "state",
+					"notes": "联系人状态：0申请中 1好友关系 2拒绝 3删除",
+					"type": "int"
+				}
+			],
+			"className": "RUserContactBean",
+			"notes": "用户联系人信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "id",
+					"notes": "分组id",
+					"type": "int"
+				},
+				{
+					"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+					"isCustom": false,
+					"name": "userId",
+					"notes": "分组拥有人",
+					"type": "string"
+				},
+				{
+					"demoValue": "常联系人",
+					"isCustom": false,
+					"name": "name",
+					"notes": "分组名",
+					"type": "string"
+				},
+				{
+					"demoValue": "http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg",
+					"isCustom": false,
+					"name": "icon",
+					"notes": "分组icon",
+					"type": "string"
+				},
+				{
+					"demoValue": "保留字段",
+					"isCustom": false,
+					"name": "tag",
+					"notes": "分组标签",
+					"type": "string"
+				},
+				{
+					"demoValue": "11",
+					"isCustom": false,
+					"name": "num",
+					"notes": "群人数",
+					"type": "int"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "createTime",
+					"notes": "创建时间时间戳到秒",
+					"type": "long"
+				}
+			],
+			"className": "RUserGroupBean",
+			"notes": "用户分组信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "id",
+					"notes": "地址id",
+					"type": "int"
+				},
+				{
+					"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+					"isCustom": false,
+					"name": "userId",
+					"notes": "业主id",
+					"type": "string"
+				},
+				{
+					"demoValue": "马书记",
+					"isCustom": false,
+					"name": "name",
+					"notes": "姓名",
+					"type": "string"
+				},
+				{
+					"demoValue": "18010483452",
+					"isCustom": false,
+					"name": "phone",
+					"notes": "电话号",
+					"type": "string"
+				},
+				{
+					"demoValue": "智造大街",
+					"isCustom": false,
+					"name": "plotName",
+					"notes": "小区名称",
+					"type": "string"
+				},
+				{
+					"demoValue": "1居住2公司",
+					"isCustom": false,
+					"name": "plotType",
+					"notes": "小区类型",
+					"type": "int"
+				},
+				{
+					"demoValue": "智造大街",
+					"isCustom": false,
+					"name": "addr",
+					"notes": "地址",
+					"type": "string"
+				},
+				{
+					"demoValue": "{companyName:'公司',department:'部门',room:'房间号'}",
+					"isCustom": false,
+					"name": "ext",
+					"notes": "地址",
+					"type": "string"
+				},
+				{
+					"demoValue": "type=1时的审核状态：0提交1通过2未通过",
+					"isCustom": false,
+					"name": "state",
+					"notes": "审核状态",
+					"type": "int"
+				},
+				{
+					"demoValue": "1居住地址 2企业地址",
+					"isCustom": false,
+					"name": "type",
+					"notes": "地址类型",
+					"type": "int"
+				},
+				{
+					"demoValue": "1显示  0不显示",
+					"isCustom": false,
+					"name": "showType",
+					"notes": "是否显示",
+					"type": "int"
+				},
+				{
+					"demoValue": "不同意",
+					"isCustom": false,
+					"name": "reason",
+					"notes": "驳回原因",
+					"type": "string"
+				}
+			],
+			"className": "RUserAddrBean",
+			"notes": "用户地址信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "id",
+					"notes": "小区id",
+					"type": "int"
+				},
+				{
+					"demoValue": "智造大街",
+					"isCustom": false,
+					"name": "name",
+					"notes": "小区名称",
+					"type": "string"
+				},
+				{
+					"demoValue": "成府路45号中关村智造大街",
+					"isCustom": false,
+					"name": "address",
+					"notes": "地址",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "type",
+					"notes": "小区类型：1居住区 2 企业",
+					"type": "int"
+				},
+				{
+					"demoValue": "靖华物业",
+					"isCustom": false,
+					"name": "propertyName",
+					"notes": "物业名称",
+					"type": "String"
+				}
+			],
+			"className": "RPlotInfoBean",
+			"notes": "小区地址信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "id",
+					"notes": "id",
+					"type": "int"
+				},
+				{
+					"demoValue": "aaae89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "uid",
+					"notes": "用户uid",
+					"type": "string"
+				},
+				{
+					"demoValue": "鲁E3f360",
+					"isCustom": false,
+					"name": "no",
+					"notes": "车牌号",
+					"type": "string"
+				},
+				{
+					"demoValue": "鲁",
+					"isCustom": false,
+					"name": "letter",
+					"notes": "第一个字符的首字母",
+					"type": "string"
+				},
+				{
+					"demoValue": "1510459412",
+					"isCustom": false,
+					"name": "creatTime",
+					"notes": "创建时间 时间戳",
+					"type": "long"
+				}
+			],
+			"className": "RCarInfoBean",
+			"notes": "用户车辆信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "id",
+					"notes": "id",
+					"type": "int"
+				},
+				{
+					"demoValue": "bbbe89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "userId",
+					"notes": "申请人Id",
+					"type": "string"
+				},
+				{
+					"demoValue": "张三",
+					"isCustom": false,
+					"name": "userName",
+					"notes": "申请人姓名",
+					"type": "string"
+				},
+				{
+					"demoValue": "15657432184",
+					"isCustom": false,
+					"name": "userPhone",
+					"notes": "申请人手机号",
+					"type": "string"
+				},
+				{
+					"demoValue": "张三",
+					"isCustom": false,
+					"name": "checkContact",
+					"notes": "来访人",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "type",
+					"notes": "工单类型：1门禁2快递",
+					"type": "int"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "sType",
+					"notes": "门禁类型：1请求门禁2发放门禁3第三方分享门禁",
+					"type": "int"
+				},
+				{
+					"demoValue": "{'visitTime':'2017-12-20','addrId':11222,'carInfo':['京AB123'],'remark':''}",
+					"isCustom": false,
+					"name": "content",
+					"notes": "工单内容",
+					"type": "string"
+				},
+				{
+					"isCustom": false,
+					"name": "plot",
+					"notes": "小区信息",
+					"type": "RPlotInfoBean"
+				},
+				{
+					"isCustom": false,
+					"name": "visit",
+					"notes": "用户门禁信息",
+					"type": "ROrderVistBean"
+				},
+				{
+					"demoValue": "{'address':'2017-12-20'",
+					"isCustom": false,
+					"name": "extAddr",
+					"notes": "业主地址JSON",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "isExpire",
+					"notes": "是否过期",
+					"type": "int"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "expireTime",
+					"notes": "过期时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "createTime",
+					"notes": "申请时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "isView",
+					"notes": "是否查看0未看1已看",
+					"type": "int"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "viewTime",
+					"notes": "查看时间",
+					"type": "long"
+				}
+			],
+			"className": "ROrderBean",
+			"notes": "用户拜访工单信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "id",
+					"notes": "id",
+					"type": "int"
+				},
+				{
+					"demoValue": "http://bluebox.com",
+					"isCustom": false,
+					"name": "QRcodeUrl",
+					"notes": "微信二维码url",
+					"type": "string"
+				},
+				{
+					"demoValue": "bbbe89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "userId",
+					"notes": "申请人Id",
+					"type": "string"
+				},
+				{
+					"demoValue": "张三",
+					"isCustom": false,
+					"name": "userName",
+					"notes": "申请人姓名",
+					"type": "string"
+				},
+				{
+					"demoValue": "15657432184",
+					"isCustom": false,
+					"name": "userPhone",
+					"notes": "申请人手机号",
+					"type": "string"
+				},
+				{
+					"demoValue": "{'visitTime':'2017-12-20','addrId':11222,'carInfo':['京AB123'],'remark':''}",
+					"isCustom": false,
+					"name": "content",
+					"notes": "工单内容",
+					"type": "string"
+				},
+				{
+					"demoValue": "{'address':'2017-12-20'",
+					"isCustom": false,
+					"name": "extAddr",
+					"notes": "业主地址JSON",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "isExpire",
+					"notes": "是否过期",
+					"type": "int"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "expireTime",
+					"notes": "过期时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "createTime",
+					"notes": "申请时间",
+					"type": "long"
+				}
+			],
+			"className": "ROrderWechatBean",
+			"notes": "微信显示来访信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "id",
+					"notes": "id",
+					"type": "int"
+				},
+				{
+					"demoValue": "bbbe89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "userId",
+					"notes": "申请人Id",
+					"type": "string"
+				},
+				{
+					"demoValue": "张三",
+					"isCustom": false,
+					"name": "userName",
+					"notes": "申请人姓名",
+					"type": "string"
+				},
+				{
+					"demoValue": "张三",
+					"isCustom": false,
+					"name": "checkContact",
+					"notes": "来访人",
+					"type": "string"
+				},
+				{
+					"demoValue": "15657432184",
+					"isCustom": false,
+					"name": "userPhone",
+					"notes": "申请人手机号",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "type",
+					"notes": "工单类型：1门禁2快递",
+					"type": "int"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "sType",
+					"notes": "门禁类型：1请求门禁2发放门禁3第三方分享门禁",
+					"type": "int"
+				},
+				{
+					"demoValue": "{'visitTime':'2017-12-20','addrId':11222,'carInfo':['京AB123'],'remark':''}",
+					"isCustom": false,
+					"name": "content",
+					"notes": "工单内容",
+					"type": "string"
+				},
+				{
+					"isCustom": false,
+					"name": "plot",
+					"notes": "小区信息",
+					"type": "RPlotInfoBean"
+				},
+				{
+					"isCustom": false,
+					"name": "visit",
+					"notes": "用户门禁信息",
+					"objName": "ROrderVistBean",
+					"type": "list"
+				},
+				{
+					"demoValue": "{'address':'2017-12-20'",
+					"isCustom": false,
+					"name": "extAddr",
+					"notes": "业主地址JSON",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "isExpire",
+					"notes": "是否过期",
+					"type": "int"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "expireTime",
+					"notes": "过期时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "createTime",
+					"notes": "申请时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "visitNum",
+					"notes": "来访次数",
+					"type": "int"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "isView",
+					"notes": "是否查看0未看1已看",
+					"type": "int"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "viewTime",
+					"notes": "查看时间",
+					"type": "long"
+				}
+			],
+			"className": "RComeOrderBean",
+			"notes": "用户来访工单信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "state",
+					"notes": "门禁审核状态：0提交1同意2不同意",
+					"type": "int"
+				},
+				{
+					"demoValue": "18888888888",
+					"isCustom": false,
+					"name": "phone",
+					"notes": "用户phone",
+					"type": "string"
+				},
+				{
+					"demoValue": "ccce89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "ovId",
+					"notes": "拜访Id",
+					"type": "string"
+				},
+				{
+					"demoValue": "aaaa89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "ovUid",
+					"notes": "拜访对象Id",
+					"type": "string"
+				},
+				{
+					"demoValue": "zhangsan",
+					"isCustom": false,
+					"name": "name",
+					"notes": "拜访对象姓名",
+					"type": "string"
+				},
+				{
+					"demoValue": "不认识",
+					"isCustom": false,
+					"name": "reason",
+					"notes": "拒绝原因",
+					"type": "string"
+				},
+				{
+					"demoValue": "http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg",
+					"isCustom": false,
+					"name": "icon",
+					"notes": "拜访对象头像",
+					"type": "string"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "visitTime",
+					"notes": "拜访时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "isView",
+					"notes": "是否查看0未看1已看",
+					"type": "int"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "viewTime",
+					"notes": "查看时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "1502517360",
+					"isCustom": false,
+					"name": "actionTime",
+					"notes": "审核时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "visitNum",
+					"notes": "来访次数",
+					"type": "int"
+				}
+			],
+			"className": "ROrderVistBean",
+			"notes": "用户门禁信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "ccce89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "QRcodeUrl",
+					"notes": "二维码QRcode",
+					"type": "string"
+				}
+			],
+			"className": "ROrderQRcodeBean",
+			"notes": "用户二维码code"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "MJ20171212",
+					"isCustom": false,
+					"name": "orderNo",
+					"notes": "拜访编号",
+					"type": "string"
+				},
+				{
+					"demoValue": "王五",
+					"isCustom": false,
+					"name": "authSecName",
+					"notes": "保安名",
+					"type": "string"
+				},
+				{
+					"demoValue": "智造大街",
+					"isCustom": false,
+					"name": "plotName",
+					"notes": "小区名",
+					"type": "string"
+				},
+				{
+					"demoValue": "南门",
+					"isCustom": false,
+					"name": "plotBoxName",
+					"notes": "岗亭",
+					"type": "string"
+				},
+				{
+					"demoValue": "123123123",
+					"isCustom": false,
+					"name": "authTime",
+					"notes": "验证时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "{'visitTime':'2017-12-20','addrId':11222,'carInfo':['京AB123'],'remark':''}",
+					"isCustom": false,
+					"name": "content",
+					"notes": "访问内容",
+					"type": "string"
+				},
+				{
+					"demoValue": "{'address':'2017-12-20'",
+					"isCustom": false,
+					"name": "extAddr",
+					"notes": "业主地址JSON",
+					"type": "string"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "state",
+					"notes": "通过状态：1同意2不同意",
+					"type": "int"
+				},
+				{
+					"demoValue": "非本人",
+					"isCustom": false,
+					"name": "reason",
+					"notes": "不能通过原因",
+					"type": "string"
+				}
+			],
+			"className": "RVisitLogBean",
+			"notes": "保安扫码门禁记录信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "123",
+					"isCustom": false,
+					"name": "version",
+					"notes": "七牛token",
+					"type": "string"
+				},
+				{
+					"demoValue": "http://os4z3g2v6.bkt.clouddn.com/area_v1.json",
+					"isCustom": false,
+					"name": "url",
+					"notes": "全国区域存放地址，json文件链接",
+					"type": "string"
+				}
+			],
+			"className": "RAreaBean",
+			"notes": "全国区域配置信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "123",
+					"isCustom": false,
+					"name": "token",
+					"notes": "七牛token",
+					"type": "string"
+				},
+				{
+					"demoValue": "http://os4z3g2v6.bkt.clouddn.com/",
+					"isCustom": false,
+					"name": "qiniuLinkUrl",
+					"notes": "七牛链",
+					"type": "string"
+				},
+				{
+					"demoValue": "http://qnimg.zpark-imway.com/",
+					"isCustom": false,
+					"name": "qiniuCDNUrl",
+					"notes": "七牛CDN链",
+					"type": "string"
+				}
+			],
+			"className": "RQiNiuConfigBean",
+			"notes": "七牛配置信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "key",
+					"isCustom": false,
+					"name": "key",
+					"notes": "key",
+					"type": "string"
+				},
+				{
+					"demoValue": "http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg",
+					"isCustom": false,
+					"name": "url",
+					"notes": "图片url地址",
+					"type": "string"
+				},
+				{
+					"demoValue": "100",
+					"isCustom": false,
+					"name": "imgH",
+					"notes": "高度",
+					"type": "int"
+				},
+				{
+					"demoValue": "100",
+					"isCustom": false,
+					"name": "imgW",
+					"notes": "宽度",
+					"type": "int"
+				},
+				{
+					"demoValue": "jpeg",
+					"isCustom": false,
+					"name": "format",
+					"notes": "文件格式",
+					"type": "string"
+				}
+			],
+			"className": "RQiniuFileBean",
+			"notes": "七牛返回的信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "key",
+					"isCustom": false,
+					"name": "key",
+					"notes": "文件名",
+					"type": "string"
+				},
+				{
+					"demoValue": "group1",
+					"isCustom": false,
+					"name": "group",
+					"notes": "组名",
+					"type": "string"
+				},
+				{
+					"demoValue": "M00/00/00/rBBJClp9OXWAa_3kAAZ3LXvuwT8782.jpg",
+					"isCustom": false,
+					"name": "groupPath",
+					"notes": "组内路径",
+					"type": "string"
+				},
+				{
+					"demoValue": "http://172.16.73.10:8888/group1/M00/00/00/rBBJClp9TrqAWHs5AAonaeOiXZ4752.jpg",
+					"isCustom": false,
+					"name": "url",
+					"notes": "图片url地址",
+					"type": "string"
+				},
+				{
+					"demoValue": "jpeg",
+					"isCustom": false,
+					"name": "format",
+					"notes": "文件格式",
+					"type": "string"
+				}
+			],
+			"className": "RFdfsFileBean",
+			"notes": "image返回的信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "id",
+					"notes": "id",
+					"type": "int"
+				},
+				{
+					"demoValue": "2",
+					"isCustom": false,
+					"name": "vercode",
+					"notes": "版本号",
+					"type": "int"
+				},
+				{
+					"demoValue": "第二版本",
+					"isCustom": false,
+					"name": "vername",
+					"notes": "版本名称",
+					"type": "String"
+				},
+				{
+					"demoValue": "http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg",
+					"isCustom": false,
+					"name": "url",
+					"notes": "下载url地址",
+					"type": "String"
+				},
+				{
+					"demoValue": "更新了已知的bug",
+					"isCustom": false,
+					"name": "content",
+					"notes": "更新内容",
+					"type": "String"
+				},
+				{
+					"demoValue": "10000",
+					"isCustom": false,
+					"name": "fsize",
+					"notes": "更新大小",
+					"type": "double"
+				},
+				{
+					"demoValue": "ccce89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "fmd5",
+					"notes": "文件md5值",
+					"type": "String"
+				},
+				{
+					"demoValue": "10000",
+					"isCustom": false,
+					"name": "createTime",
+					"notes": "更新时间",
+					"type": "long"
+				},
+				{
+					"demoValue": "2",
+					"isCustom": false,
+					"name": "verport",
+					"notes": "版本端1用户端2管理端",
+					"type": "int"
+				}
+			],
+			"className": "RVersionBean",
+			"notes": "版本升级信息"
+		},
+		{
+			"attrs": [
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "mid",
+					"notes": "id",
+					"type": "int"
+				},
+				{
+					"demoValue": "ccce89b7d1c545eba5906c2d844a7440",
+					"isCustom": false,
+					"name": "tuid",
+					"notes": "目标id",
+					"type": "String"
+				},
+				{
+					"demoValue": "张三",
+					"isCustom": false,
+					"name": "tname",
+					"notes": "目标姓名",
+					"type": "String"
+				},
+				{
+					"demoValue": "实名认证",
+					"isCustom": false,
+					"name": "title",
+					"notes": "消息标题",
+					"type": "String"
+				},
+				{
+					"demoValue": "你已通过实名认证",
+					"isCustom": false,
+					"name": "content",
+					"notes": "消息内容",
+					"type": "String"
+				},
+				{
+					"demoValue": "type=1",
+					"isCustom": false,
+					"name": "type",
+					"notes": "消息类型",
+					"type": "int"
+				},
+				{
+					"demoValue": "",
+					"isCustom": false,
+					"name": "extras",
+					"notes": "消息传递内容",
+					"type": "String"
+				},
+				{
+					"demoValue": "昨天",
+					"isCustom": false,
+					"name": "addTimeStr",
+					"notes": "发送时间",
+					"type": "String"
+				},
+				{
+					"demoValue": "563234234",
+					"isCustom": false,
+					"name": "addTime",
+					"notes": "发送时间戳",
+					"type": "long"
+				},
+				{
+					"demoValue": "0",
+					"isCustom": false,
+					"name": "isRead",
+					"notes": "是否已读0未读1已读",
+					"type": "int"
+				},
+				{
+					"demoValue": "1",
+					"isCustom": false,
+					"name": "loginPort",
+					"notes": "所属手机端：1用户2管理",
+					"type": "int"
+				}
+			],
+			"className": "RMsgBean",
+			"notes": "消息信息"
+		}
+	],
+	"protocolFiles": [
+		{
+			"className": "AccountController",
+			"fileName": "account-protocol.xml",
+			"notes": "账户-相关接口",
+			"protocols": [
+				{
+					"name": "login",
+					"notes": "登录",
+					"request": [
+						{
+							"demoValue": "15688888888",
+							"name": "phone",
+							"notEmpty": {
+								"message": "手机不能为空"
+							},
+							"notes": "手机不能为空",
+							"pattern": {
+								"message": "手机号不合法",
+								"regexp": "^(1)\\\\d{10}$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "123123",
+							"name": "vcode",
+							"notes": "手机验证码",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "123123",
+							"name": "password",
+							"notes": "密码",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "loginPort",
+							"notEmpty": {
+								"message": "登录端不能为空"
+							},
+							"notes": "登录端：1用户端2保安端",
+							"pattern": {
+								"message": "类型不正确，1用户端2保安端",
+								"regexp": "^1|2$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "type",
+							"notEmpty": {
+								"message": "登录类型不能为空"
+							},
+							"notes": "登录类型：1手机验证码登录，2用户密码登录",
+							"pattern": {
+								"message": "类型不正确，1手机验证码登录，2用户密码登录",
+								"regexp": "^1|2$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "123123",
+							"name": "deviceId",
+							"notes": "设备id",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "123123",
+							"name": "os",
+							"notes": "操作系统",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "123123",
+							"name": "model",
+							"notes": "设备机型",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "fromType",
+							"notes": "1ios 2android",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "resolution",
+							"notes": "分辨率 1024，2048",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/login",
+					"requestName": "LoginParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RUserBean",
+					"state": 1
+				},
+				{
+					"name": "thirdLogin",
+					"notes": "第三方登录",
+					"request": [
+						{
+							"demoValue": "1",
+							"name": "type",
+							"notEmpty": {
+								"message": "登录类型不能为空"
+							},
+							"notes": "登录类型：1微信，2QQ,不能为空",
+							"pattern": {
+								"message": "登录类型不正确：1微信，2QQ",
+								"regexp": "^1|2$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg",
+							"name": "icon",
+							"notes": "头像",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "123123",
+							"name": "openid",
+							"notEmpty": {
+								"message": "openid不能为空"
+							},
+							"notes": "openid，不能为空",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "loginPort",
+							"notEmpty": {
+								"message": "登录端不能为空"
+							},
+							"notes": "登录端：1用户端2保安端",
+							"pattern": {
+								"message": "类型不正确，1用户端2保安端",
+								"regexp": "^1|2$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "123123",
+							"name": "deviceId",
+							"notes": "设备id",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "123123",
+							"name": "os",
+							"notes": "操作系统",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "123123",
+							"name": "model",
+							"notes": "设备机型",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "fromType",
+							"notes": "1ios 2android",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "resolution",
+							"notes": "分辨率 1024，2048",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/thirdLogin",
+					"requestName": "ThirdLoginParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RUserBean",
+					"state": 1
+				},
+				{
+					"name": "thirdBindPhone",
+					"notes": "第三方登录时绑定手机号",
+					"request": [
+						{
+							"demoValue": "123123",
+							"name": "openid",
+							"notEmpty": {
+								"message": "openid不能为空"
+							},
+							"notes": "openid，不能为空",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "http://pic.58pic.com/58pic/14/00/69/66858PICNfJ_1024.jpg",
+							"name": "icon",
+							"notes": "头像",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "loginPort",
+							"notEmpty": {
+								"message": "登录端不能为空"
+							},
+							"notes": "登录端：1用户端2保安端",
+							"pattern": {
+								"message": "类型不正确，1用户端2保安端",
+								"regexp": "^1|2$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "type",
+							"notes": "登录类型：1微信，2QQ,不能为空",
+							"pattern": {
+								"message": "登录类型不正确：1微信，2QQ",
+								"regexp": "^1|2$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1231",
+							"name": "vcode",
+							"notEmpty": {
+								"message": "验证码不能为空"
+							},
+							"notes": "手机验证码",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "18888888888",
+							"name": "phone",
+							"notEmpty": {
+								"message": "手机不能为空"
+							},
+							"notes": "绑定手机号",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/thirdBindPhone",
+					"requestName": "ThirdBindPhoneParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RUserBean",
+					"state": 1
+				},
+				{
+					"name": "updatePhone",
+					"notes": "修改手机号",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "18888888888",
+							"name": "phone",
+							"notEmpty": {
+								"message": "新手机号不能为空"
+							},
+							"notes": "新手机号",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1231",
+							"name": "vcode",
+							"notEmpty": {
+								"message": "验证码不能为空"
+							},
+							"notes": "手机验证码",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/updatePhone",
+					"requestName": "UpdatePhoneParam",
+					"resDataType": "base",
+					"resType": "json",
+					"state": 1
+				},
+				{
+					"name": "updateIcon",
+					"notes": "更新头像",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "%7B%22widh%22%3A100%2C%22height%22%3A100%2C%22key%22%3A1231%2C%22url%22%3A%22http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F00%2F69%2F66858PICNfJ_1024.jpg%22%7D",
+							"name": "icon",
+							"notes": "用户头像JSON",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/updateIcon",
+					"requestName": "UserHeadParam",
+					"resDataType": "base",
+					"resType": "json",
+					"state": 1
+				},
+				{
+					"name": "updatePwd",
+					"notes": "更新密码",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "checkToken",
+							"notEmpty": {
+								"message": "临时token不能为空"
+							},
+							"notes": "临时token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "123456",
+							"name": "pwd",
+							"notEmpty": {
+								"message": "新密码不能为空"
+							},
+							"notes": "新密码",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "123456",
+							"name": "confirmPwd",
+							"notEmpty": {
+								"message": "确认密码不能为空"
+							},
+							"notes": "确认新密码",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/updatePwd",
+					"requestName": "EditPwdParam",
+					"resDataType": "base",
+					"resType": "json",
+					"state": 1
+				},
+				{
+					"name": "applyAuth",
+					"notes": "用户认证",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "张三",
+							"name": "name",
+							"notEmpty": {
+								"message": "姓名不能为空"
+							},
+							"notes": "姓名",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "gender",
+							"notEmpty": {
+								"message": "性别不能为空"
+							},
+							"notes": "性别：1男，2女，不能为空",
+							"pattern": {
+								"message": "性别不正确：1男，2女",
+								"regexp": "^1|2$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "370503199012023123",
+							"name": "idNo",
+							"notEmpty": {
+								"message": "身份证号不能为空"
+							},
+							"notes": "身份证号",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "%7B%22frontImg%22%3A%7B%22widh%22%3A100%2C%22height%22%3A100%2C%22key%22%3A1231%2C%22url%22%3A%22http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F00%2F69%2F66858PICNfJ_1024.jpg%22%7D%2C%22back%22%3A%7B%22widh%22%3A100%2C%22height%22%3A100%2C%22key%22%3A1231%2C%22url%22%3A%22http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F00%2F69%2F66858PICNfJ_1024.jpg%22%7D%7D",
+							"name": "idInfo",
+							"notEmpty": {
+								"message": "身份证信息不能为空"
+							},
+							"notes": "身份证JSON",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/applyAuth",
+					"requestName": "ApplyAuthParam",
+					"resDataType": "base",
+					"resType": "json",
+					"state": 1
+				},
+				{
+					"name": "getAuthInfo",
+					"notes": "获取用户当前认证信息",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/getAuthInfo",
+					"requestName": "GetAuthInfoParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RUserAuthBean",
+					"state": 1
+				},
+				{
+					"name": "signOut",
+					"notes": "用户退出",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/signOut",
+					"requestName": "SignOutParam",
+					"resDataType": "base",
+					"resType": "json",
+					"state": 1
+				},
+				{
+					"name": "checkVcode",
+					"notes": "验证手机验证码",
+					"request": [
+						{
+							"demoValue": "1",
+							"name": "type",
+							"notes": "类型，1找回密码，2更新手机号",
+							"pattern": {
+								"message": "类型不正确，1找回密码，2更新手机号",
+								"regexp": "^1|2$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "18888888888",
+							"name": "phone",
+							"notEmpty": {
+								"message": "新手机号不能为空"
+							},
+							"notes": "新手机号",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1234",
+							"name": "vcode",
+							"notEmpty": {
+								"message": "手机验证码不能为空"
+							},
+							"notes": "新手机的验证码，手机验证码不能为空",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/checkVcode",
+					"requestName": "CheckVcodeParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RCheckCodeBean",
+					"state": 1
+				},
+				{
+					"name": "getUserInfo",
+					"notes": "根据token获取用户信息",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/getUserInfo",
+					"requestName": "GetUserInfoParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RUserBean",
+					"state": 1
+				}
+			],
+			"requestMapping": "/app/account",
+			"toCreate": true,
+			"version": "1.0"
+		},
+		{
+			"className": "UserController",
+			"fileName": "user-protocol.xml",
+			"notes": "用户-相关接口",
+			"protocols": [
+				{
+					"name": "getAddrs2User",
+					"notes": "获取用户地址信息",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "abcdd94e91184272997ab2c0b7b54bb1",
+							"name": "userId",
+							"notes": "用户Id，空则获取登录token用户的地址信息",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/getAddrs2User",
+					"requestName": "GetAddr2UserParam",
+					"resDataType": "list",
+					"resType": "json",
+					"responseName": "RUserAddrBean",
+					"state": 1
+				},
+				{
+					"name": "editAddr2Plot",
+					"notes": "添加地址",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "2",
+							"name": "id",
+							"notes": "地址id",
+							"require": false,
+							"type": "int"
+						},
+						{
+							"demoValue": "1",
+							"name": "plotId",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "{}",
+							"name": "ext",
+							"notes": "地址信息",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "15765322183",
+							"name": "conPhone",
+							"notes": "临时手机号",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "潘琦",
+							"name": "conName",
+							"notes": "临时联系人",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/editAddr2Plot",
+					"requestName": "EditAddr2PlotParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RUserAddrBean",
+					"state": 1
+				},
+				{
+					"name": "remove",
+					"notes": "删除地址",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "aid",
+							"notEmpty": {
+								"message": "地址id不能为空"
+							},
+							"notes": "地址id",
+							"require": false,
+							"type": "string"
+						}
+					],
+					"requestMapping": "/v1/remove",
+					"requestName": "RemoveAddrParam",
+					"resDataType": "base",
+					"resType": "json",
+					"state": 1
+				},
+				{
+					"name": "setShowType",
+					"notes": "设置公开地址",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "",
+							"name": "showType",
+							"notEmpty": {
+								"message": "显示类型不能为空"
+							},
+							"notes": "显示类型：1显示 0不显示",
+							"pattern": {
+								"message": "类型不正确，1显示 0不显示",
+								"regexp": "^0|1$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "aid",
+							"notEmpty": {
+								"message": "地址id不能为空"
+							},
+							"notes": "地址id",
+							"require": false,
+							"type": "string"
+						}
+					],
+					"requestMapping": "/v1/setShowType",
+					"requestName": "SetAddrShowParam",
+					"resDataType": "base",
+					"resType": "json",
+					"state": 1
+				},
+				{
+					"name": "getPlots",
+					"notes": "获取工作区信息，物业信息，小区信息，地址",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "15688888888",
+							"name": "key",
+							"notes": "模糊搜索按手机号、姓名、拼音",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/getPlots",
+					"requestName": "GetPlotsParam",
+					"resDataType": "list",
+					"resType": "json",
+					"responseName": "RPlotInfoBean",
+					"state": 1
+				},
+				{
+					"name": "getCars2User",
+					"notes": "获取用户车辆信息",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/getCars2User",
+					"requestName": "GetCars2UserParam",
+					"resDataType": "list",
+					"resType": "json",
+					"responseName": "RCarInfoBean",
+					"state": 1
+				},
+				{
+					"name": "eidtCar",
+					"notes": "编辑/添加车辆",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "2",
+							"name": "id",
+							"notes": "车辆id",
+							"require": false,
+							"type": "int"
+						},
+						{
+							"demoValue": "鲁E23433",
+							"name": "number",
+							"notEmpty": {
+								"message": "车牌号不能为空"
+							},
+							"notes": "车牌号",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/editCar",
+					"requestName": "EditCarParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RCarInfoBean",
+					"state": 1
+				},
+				{
+					"name": "delCar",
+					"notes": "删除车辆",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "cid",
+							"notEmpty": {
+								"message": "车辆id不能为空"
+							},
+							"notes": "车辆id",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/delCar",
+					"requestName": "DelCarParam",
+					"resDataType": "base",
+					"resType": "json",
+					"state": 1
+				},
+				{
+					"name": "getOrderCode",
+					"notes": "获取用户二维码token",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/getOrderCode",
+					"requestName": "GetOrderCodeParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "ROrderQRcodeBean",
+					"state": 1
+				},
+				{
+					"name": "getMsgs",
+					"notes": "获取消息记录",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "type",
+							"notes": "类型筛选",
+							"require": false,
+							"type": "int"
+						},
+						{
+							"demoValue": "0",
+							"name": "page",
+							"notes": "页码，默认从0开始",
+							"require": false,
+							"type": "int"
+						},
+						{
+							"demoValue": "20",
+							"name": "pageSize",
+							"notes": "每页数量，默认20",
+							"require": false,
+							"type": "int"
+						}
+					],
+					"requestMapping": "/v1/getMsgs",
+					"requestName": "GetMsgsParam",
+					"resDataType": "list",
+					"resType": "json",
+					"responseName": "RMsgBean",
+					"state": 1
+				},
+				{
+					"name": "readMsg",
+					"notes": "消息已读",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "readType",
+							"notes": "读消息类型1类型列表，传type2一条消息，传mid",
+							"require": false,
+							"type": "int"
+						},
+						{
+							"demoValue": "1",
+							"name": "type",
+							"notes": "消息类型",
+							"require": false,
+							"type": "int"
+						},
+						{
+							"demoValue": "1",
+							"name": "mid",
+							"notes": "消息id",
+							"require": false,
+							"type": "int"
+						}
+					],
+					"requestMapping": "/v1/readMsg",
+					"requestName": "ReadMsgParam",
+					"resDataType": "base",
+					"resType": "json",
+					"state": 1
+				},
+				{
+					"name": "getUnReadNUm",
+					"notes": "消息未读数量",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/getUnReadNUm",
+					"requestName": "GetUnReadNumParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "int",
+					"state": 1
+				}
+			],
+			"requestMapping": "/app/user",
+			"toCreate": true,
+			"version": "1.0"
+		},
+		{
+			"className": "FileController",
+			"fileName": "file-protocol.xml",
+			"notes": "文件-相关接口",
+			"protocols": [
+				{
+					"name": "uploadWechatFile",
+					"notes": "文件-微信上传文件",
+					"request": [
+						{
+							"demoValue": "微信的media_id",
+							"name": "media_id",
+							"notEmpty": {
+								"message": "media_id不能为空！"
+							},
+							"notes": "微信的media_id",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/uploadWechatFile",
+					"requestName": "UploadFileParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RQiniuFileBean",
+					"state": 1
+				},
+				{
+					"name": "getQiNiuConfig",
+					"notes": "七牛-配置信息",
+					"requestMapping": "/v1/getQiNiuConfig",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RQiNiuConfigBean",
+					"state": 1
+				},
+				{
+					"name": "upload2QiNiuImage",
+					"notes": "七牛-上传文件",
+					"requestMapping": "/v1/upload2QiNiuImage",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RQiniuFileBean",
+					"state": 1
+				},
+				{
+					"name": "upload2FdfsImage",
+					"notes": "文件-上传图片",
+					"requestMapping": "/v1/upload2FdfsImage",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RFdfsFileBean",
+					"state": 1
+				}
+			],
+			"requestMapping": "/app/file",
+			"toCreate": true,
+			"version": "1.0"
+		},
+		{
+			"className": "CommonController",
+			"fileName": "common-protocol.xml",
+			"notes": "公共-相关接口",
+			"protocols": [
+				{
+					"name": "sendVCode",
+					"notes": "发送验证码",
+					"request": [
+						{
+							"demoValue": "18553351967",
+							"name": "phone",
+							"notEmpty": {
+								"message": "手机号不能为空！"
+							},
+							"notes": "手机号码",
+							"pattern": {
+								"message": "手机号格式不正确！",
+								"regexp": "^(1)\\\\d{10}$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "type",
+							"notes": "类型，1登录注册2修改密码3绑定手机号4更新手机号",
+							"pattern": {
+								"message": "类型不正确，1登录注册2修改密码3绑定手机号4更新手机号",
+								"regexp": "^1|2|3|4$"
+							},
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "token:当绑定，更新手机号，修改密码，都需要传token",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/sendVCode",
+					"requestName": "SendVCodeParam",
+					"resDataType": "base",
+					"resType": "json",
+					"state": 1
+				},
+				{
+					"name": "area",
+					"notes": "全国区域",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						}
+					],
+					"requestMapping": "/v1/area",
+					"requestName": "GetAreaParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RAreaBean",
+					"state": 1
+				},
+				{
+					"name": "upgradeVersion",
+					"notes": "更新版本",
+					"request": [
+						{
+							"demoValue": "5c05d94e91184272997ab2c0b7b54bb1",
+							"name": "token",
+							"notes": "用户token",
+							"require": false,
+							"type": "String"
+						},
+						{
+							"demoValue": "1",
+							"name": "vercode",
+							"notes": "版本号",
+							"require": false,
+							"type": "int"
+						}
+					],
+					"requestMapping": "/v1/upgradeVersion",
+					"requestName": "UpgradeVersionParam",
+					"resDataType": "object",
+					"resType": "json",
+					"responseName": "RVersionBean",
+					"state": 1
+				}
+			],
+			"requestMapping": "/app/common",
+			"toCreate": true,
+			"version": "1.0"
+		}
+	],
+	"rescodes": [
+		{
+			"code": 100,
+			"msg": "操作成功",
+			"name": "success"
+		},
+		{
+			"code": 101,
+			"msg": "操作失败",
+			"name": "fail"
+		},
+		{
+			"code": 102,
+			"msg": "会话过期",
+			"name": "token_fail"
+		},
+		{
+			"code": 103,
+			"msg": "%s不正确！",
+			"name": "param_is_error"
+		},
+		{
+			"code": 104,
+			"msg": "[%s]输入错误！",
+			"name": "param_input_is_error"
+		},
+		{
+			"code": 105,
+			"msg": "%s不能为空！",
+			"name": "param_input_not_null"
+		},
+		{
+			"code": 106,
+			"msg": "%s已经存在！",
+			"name": "object_is_exist"
+		},
+		{
+			"code": 107,
+			"msg": "%s不存在！",
+			"name": "object_is_not_exist"
+		},
+		{
+			"code": 108,
+			"msg": "%s",
+			"name": "error"
+		},
+		{
+			"code": 109,
+			"msg": "账号或密码错误",
+			"name": "login_account_password_error"
+		},
+		{
+			"code": 10001,
+			"msg": "用户密码未设置,请使用验证码登陆",
+			"name": "user_password_not_set"
+		},
+		{
+			"code": 10002,
+			"msg": "用户两次密码不一致",
+			"name": "user_pwd_confirmpwd_not_equals"
+		},
+		{
+			"code": 10003,
+			"msg": "新增注册用户不能用密码登录，请使用手机验证码登录",
+			"name": "user_register_not_usepwd_login"
+		},
+		{
+			"code": 10004,
+			"msg": "用户绑定的手机号",
+			"name": "user_bind_phone"
+		},
+		{
+			"code": 10005,
+			"msg": "当前账号未绑定手机号",
+			"name": "third_account_not_bind_phone"
+		},
+		{
+			"code": 10101,
+			"msg": "用户实名认证中%s",
+			"name": "user_real_auth_going"
+		},
+		{
+			"code": 10102,
+			"msg": "用户实名认证通过%s",
+			"name": "user_real_auth_pass"
+		},
+		{
+			"code": 10103,
+			"msg": "用户实名认证未通过%s",
+			"name": "user_real_auth_not_pass"
+		},
+		{
+			"code": 10104,
+			"msg": "用户未认证",
+			"name": "user_is_not_auth"
+		},
+		{
+			"code": 10107,
+			"msg": "用户未认证保安",
+			"name": "sec_is_not_auth"
+		},
+		{
+			"code": 10105,
+			"msg": "已提交保安认证，请等待审核",
+			"name": "sec_is_wait_auth"
+		},
+		{
+			"code": 10106,
+			"msg": "已认证为保安",
+			"name": "sec_auth_is_pass"
+		},
+		{
+			"code": 11001,
+			"msg": "用户token不能为空",
+			"name": "user_token_not_null"
+		},
+		{
+			"code": 12001,
+			"msg": "未有这条添加好友记录",
+			"name": "user_contact_add_not"
+		},
+		{
+			"code": 12002,
+			"msg": "申请已经发送，等待对方同意",
+			"name": "user_contact_hasAdd_record"
+		},
+		{
+			"code": 12501,
+			"msg": "%s",
+			"name": "user_group_member_is_exist"
+		},
+		{
+			"code": 12003,
+			"msg": "不是联系人",
+			"name": "user_is_not_contact"
+		},
+		{
+			"code": 12004,
+			"msg": "已经是联系人",
+			"name": "user_is_contact"
+		},
+		{
+			"code": 12005,
+			"msg": "已拒绝该联系人",
+			"name": "contact_is_refuse"
+		},
+		{
+			"code": 12005,
+			"msg": "这不是你的分组",
+			"name": "group_is_not_user"
+		},
+		{
+			"code": 15001,
+			"msg": "%s物业地址未设置",
+			"name": "user_hold_not_set"
+		},
+		{
+			"code": 15002,
+			"msg": "%s业主未认证%s",
+			"name": "user_hold_not_auth"
+		},
+		{
+			"code": 15003,
+			"msg": "%s业主未认证通过%s",
+			"name": "user_hold_not_auth_pass"
+		},
+		{
+			"code": 15004,
+			"msg": "%s身份证号已经被绑定%s",
+			"name": "user_hold_has_bind"
+		},
+		{
+			"code": 16001,
+			"msg": "%s门禁已经同意",
+			"name": "user_access_has_agress"
+		},
+		{
+			"code": 16002,
+			"msg": "%s门禁已经取消",
+			"name": "user_access_has_cancel"
+		},
+		{
+			"code": 16003,
+			"msg": "%s门禁已经忽略",
+			"name": "user_access_has_ignore"
+		},
+		{
+			"code": 16004,
+			"msg": "%s门禁未同意",
+			"name": "user_access_not_agress"
+		},
+		{
+			"code": 16005,
+			"msg": "%s门禁地址未设置",
+			"name": "user_access_address_not_set"
+		},
+		{
+			"code": 16006,
+			"msg": "门禁已经过期",
+			"name": "user_access_has_expire"
+		},
+		{
+			"code": 16101,
+			"msg": "%s二维码无效%s",
+			"name": "access_visit_qrcode_invalid"
+		},
+		{
+			"code": 16102,
+			"msg": "%s二维码信息错误",
+			"name": "access_visit_qrcode_info_error"
+		},
+		{
+			"code": 16104,
+			"msg": "%s拜访门禁信息无效%s",
+			"name": "access_visit_qrcode_info_invalid"
+		},
+		{
+			"code": 20001,
+			"msg": "验证码不正确！",
+			"name": "vcode_is_error"
+		},
+		{
+			"code": 20002,
+			"msg": "验证码已经过期！",
+			"name": "vcode_is_expire"
+		},
+		{
+			"code": 20003,
+			"msg": "验证码已经发送！",
+			"name": "vcode_is_send"
+		},
+		{
+			"code": 20004,
+			"msg": "一分钟内限制发送短信次数！",
+			"name": "vcode_in_limit"
+		},
+		{
+			"code": 21000,
+			"msg": "验证手机token已过期",
+			"name": "checktoken_is_expire"
+		},
+		{
+			"code": 21001,
+			"msg": "验证手机验证码错误",
+			"name": "checktoken_is_error"
+		},
+		{
+			"code": 30001,
+			"msg": "当前已是最新版本",
+			"name": "version_is_lastest"
+		},
+		{
+			"code": 30002,
+			"msg": "没有新的版本",
+			"name": "not_have_new_version"
+		},
+		{
+			"code": 30001,
+			"msg": "%s新增失败",
+			"name": "database_insert_fail"
+		},
+		{
+			"code": 30002,
+			"msg": "%s更新失败",
+			"name": "database_update_fail"
+		},
+		{
+			"code": 30003,
+			"msg": "%s删除失败",
+			"name": "database_delete_fail"
+		}
+	]
+}

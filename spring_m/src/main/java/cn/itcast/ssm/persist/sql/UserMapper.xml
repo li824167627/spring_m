@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.itcast.ssm.persist.sql.UserMapper">
+
+	<resultMap type="UserAuthVo" id="UserMap" autoMapping="true">
+		<id property="id" column="id" />
+		<association property="auth" javaType="UserAuthBean">
+			<id property="id" column="aid" />
+			<result property="userId" column="userId" />
+			<result property="idNo" column="idNo" />
+			<result property="name" column="aname" />
+			<result property="gender" column="agender" />
+			<result property="reason" column="reason" />
+			<result property="ext" column="ext" />
+			<result property="state" column="astate" />
+			<result property="actionTime" column="actionTime" />
+			<result property="actionName" column="actionName" />
+		</association>
+	</resultMap>
+
+	<!-- 插入用户信息 -->
+	<insert id="insert">
+		INSERT INTO sec_user
+		(id, phone, password, name,
+		letter, icon, gender,
+		regTime, lastLoginTime, isSetPwd)
+		VALUES
+		( #{id},
+		#{phone}, #{password},
+		#{name}, #{letter}, #{icon}, #{gender},
+		now(),
+		now(), #{isSetPwd})
+	</insert>
+
+	<!-- 根据id获取用户 -->
+	<select id="selectOneByUid" resultMap="UserMap">
+		SELECT u.*, a.id as aid,
+		a.idNo, a.ext, a.actionTime,
+		a.createTime, a.state as astate,
+		a.actionId ,a.name as aname, a.gender as agender,
+		a.reason
+		FROM sec_user
+		u
+		LEFT JOIN sec_user_auth a
+		on u.id = a.userId
+		WHERE u.id = #{id}
+	</select>
+
+	<select id="selectOneByIdNo" resultType="UserBean">
+		SELECT * FROM sec_user
+		WHERE idNo = #{idNo}
+	</select>
+
+	<!-- 根据手机号获取用户 -->
+	<select id="selectOneByPhone" resultMap="UserMap">
+		SELECT u.*, a.id as aid,
+		a.idNo, a.ext, a.actionTime,
+		a.createTime, a.state as astate,
+		a.actionId ,a.name as aname, a.gender as agender,
+		a.reason
+		FROM sec_user
+		u
+		LEFT JOIN sec_user_auth a
+		on u.id = a.userId
+		WHERE u.phone = #{phone}
+	</select>
+
+	<select id="selectAuthVoByUid" resultMap="UserMap">
+		SELECT u.*, a.id as
+		aid, a.idNo, a.ext, a.actionTime,
+		a.createTime, a.state as astate,
+		a.actionId ,a.name as aname, a.gender as agender,
+		a.reason
+		FROM sec_user
+		u
+		LEFT JOIN sec_user_auth a
+		on u.id = a.userId
+		WHERE u.id = #{id}
+	</select>
+
+	<select id="selectOneByOpenId" resultMap="UserMap">
+		SELECT u.*, a.id as
+		aid, a.idNo, a.ext, a.actionTime,
+		a.createTime, a.state as astate,
+		a.actionId ,a.name as aname, a.gender as agender,
+		a.reason
+		FROM sec_user
+		u
+		left join sec_user_third t
+		on u.id = t.userId
+		LEFT JOIN sec_user_auth a
+		on u.id = a.userId
+		WHERE t.openid = #{openid}
+	</select>
+
+	<update id="update">
+		UPDATE sec_user
+		<set>
+			<if test="icon != null">icon = #{icon},</if>
+			<if test="phone != null">phone = #{phone},</if>
+			<if test="password != null">password = #{password},</if>
+			<if test="isSetPwd != null">isSetPwd = #{isSetPwd},</if>
+			<if test="name != null">name = #{name},</if>
+			<if test="gender != null">gender = #{gender},</if>
+		</set>
+		WHERE id = #{id}
+	</update>
+
+	<!-- 更新用户最后登录时间 -->
+	<update id="updateLoginTime">
+		UPDATE sec_user
+		SET lastLoginTime = now()
+		WHERE id =
+		#{id};
+	</update>
+
+	<!-- 更新用户密码 -->
+	<update id="updatePwd">
+		UPDATE user
+		SET password = #{password},
+		updateTime =
+		now()
+		WHERE uid = #{uid};
+	</update>
+
+	<!-- 插入用户第三方登录账号信息 -->
+	<insert id="insertThird">
+		INSERT INTO sec_user_third
+		(userId, type, openId,
+		bindTime, loginType)
+		VALUES
+		(#{userId}, #{type}, #{openId}, now(),
+		#{loginType})
+	</insert>
+
+	<select id="selectListByIds" resultType="UserBean">
+		select * from sec_user
+		where id in
+		<foreach collection="beans" index="index" item="item" open="("
+			separator="," close=")">
+			#{item}
+		</foreach>
+	</select>
+
+	<select id="selectListAll" resultType="UserBean">
+		SELECT * FROM TEST_USER
+	</select>
+
+</mapper>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocols>
+	<!-- 获取用户所有联系人 -->
+	<protocol name="getAddrs2User" requestMapping="/v1/getAddrs2User"
+		resType="json" notes="获取用户地址信息" state="1" requestName="GetAddr2UserParam"
+		resDataType="list" responseName="RUserAddrBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="userId" type="String" demoValue="abcdd94e91184272997ab2c0b7b54bb1"
+				notes="用户Id，空则获取登录token用户的地址信息">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 新建/编辑地址 -->
+	<protocol name="editAddr2Plot" requestMapping="/v1/editAddr2Plot"
+		resType="json" notes="添加地址" state="1" requestName="EditAddr2PlotParam"
+		resDataType="object" responseName="RUserAddrBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="id" type="int" demoValue="2" notes="地址id">
+			</param>
+			<param name="plotId" type="String" demoValue="1" notes="用户token">
+			</param>
+			<param name="ext" type="String" demoValue="{}" notes="地址信息">
+			</param>
+			<param name="conPhone" type="String" demoValue="15765322183"
+				notes="临时手机号">
+			</param>
+			<param name="conName" type="String" demoValue="潘琦" notes="临时联系人">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 删除地址 -->
+	<protocol name="remove" requestMapping="/v1/remove" resType="json"
+		notes="删除地址" state="1" requestName="RemoveAddrParam" resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="aid" type="string" demoValue="1" notes="地址id">
+				<notEmpty message="地址id不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 设置地址 -->
+	<protocol name="setShowType" requestMapping="/v1/setShowType"
+		resType="json" notes="设置公开地址" state="1" requestName="SetAddrShowParam"
+		resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="showType" type="String" demoValue="" notes="显示类型：1显示 0不显示">
+				<notEmpty message="显示类型不能为空"></notEmpty>
+				<pattern regexp="^0|1$" message="类型不正确，1显示 0不显示" />
+			</param>
+			<param name="aid" type="string" demoValue="1" notes="地址id">
+				<notEmpty message="地址id不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 搜索获取工作区信息，物业信息，小区信息，地址 -->
+	<protocol name="getPlots" requestMapping="/v1/getPlots"
+		resType="json" notes="获取工作区信息，物业信息，小区信息，地址" state="1" requestName="GetPlotsParam"
+		resDataType="list" responseName="RPlotInfoBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="key" type="String" demoValue="15688888888" notes="模糊搜索按手机号、姓名、拼音">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 获取用户车辆 -->
+	<protocol name="getCars2User" requestMapping="/v1/getCars2User"
+		resType="json" notes="获取用户车辆信息" state="1" requestName="GetCars2UserParam"
+		resDataType="list" responseName="RCarInfoBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 编辑/添加车辆 -->
+	<protocol name="eidtCar" requestMapping="/v1/editCar" resType="json"
+		notes="编辑/添加车辆" state="1" requestName="EditCarParam" resDataType="object"
+		responseName="RCarInfoBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="id" type="int" demoValue="2" notes="车辆id">
+			</param>
+			<param name="number" type="String" demoValue="鲁E23433" notes="车牌号">
+				<notEmpty message="车牌号不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 删除车辆 -->
+	<protocol name="delCar" requestMapping="/v1/delCar" resType="json"
+		notes="删除车辆" state="1" requestName="DelCarParam" resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="cid" type="String" demoValue="1" notes="车辆id">
+				<notEmpty message="车辆id不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 获取个人二维码token -->
+	<protocol name="getOrderCode" requestMapping="/v1/getOrderCode"
+		resType="json" notes="获取用户二维码token" state="1" requestName="GetOrderCodeParam"
+		resDataType="object" responseName="ROrderQRcodeBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+		</request>
+	</protocol>
+
+
+	<protocol name="getMsgs" requestMapping="/v1/getMsgs" resType="json"
+		notes="获取消息记录" state="1" requestName="GetMsgsParam" resDataType="list"
+		responseName="RMsgBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="type" type="int" demoValue="1" notes="类型筛选">
+			</param>
+			<param name="page" type="int" demoValue="0" notes="页码，默认从0开始">
+			</param>
+			<param name="pageSize" type="int" demoValue="20" notes="每页数量，默认20">
+			</param>
+		</request>
+	</protocol>
+
+	<protocol name="readMsg" requestMapping="/v1/readMsg" resType="json"
+		notes="消息已读" state="1" requestName="ReadMsgParam" resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="readType" type="int" demoValue="1"
+				notes="读消息类型1类型列表，传type2一条消息，传mid">
+			</param>
+			<param name="type" type="int" demoValue="1" notes="消息类型">
+			</param>
+			<param name="mid" type="int" demoValue="1" notes="消息id">
+			</param>
+		</request>
+	</protocol>
+
+
+	<protocol name="getUnReadNUm" requestMapping="/v1/getUnReadNUm"
+		resType="json" notes="消息未读数量" state="1" requestName="GetUnReadNumParam"
+		resDataType="object" responseName="int">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+		</request>
+	</protocol>
+
+
+
+
+
+</protocols>

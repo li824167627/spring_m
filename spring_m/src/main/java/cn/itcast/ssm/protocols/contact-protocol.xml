@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocols>
+
+	<!-- 获取用户所有联系人 -->
+	<protocol name="getContacts2User" requestMapping="/v1/getContacts2User"
+		resType="json" notes="获取用户所有联系人" state="1" requestName="GetContacts2UserParam"
+		resDataType="list" responseName="RUserContactBean">
+		<request>
+			<param name="key" type="String" demoValue="15688888888" notes="模糊搜索按手机号、姓名、拼音">
+			</param>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 获取未添加过的联系人，不包括正在审核的 -->
+	<protocol name="getContacts" requestMapping="/v1/getContacts"
+		resType="json" notes="获取未添加过的联系人，不包括正在审核的" state="1" requestName="GetContactsParam"
+		resDataType="list" responseName="RUserContactBean">
+		<request>
+			<param name="key" type="String" demoValue="15688888888" notes="模糊搜索按手机号、姓名、拼音">
+				<notEmpty message="输入搜索的好友手机号"></notEmpty>
+			</param>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 获取用户申请联系人记录 -->
+	<protocol name="getContacts2Apply" requestMapping="/v1/getContacts2Apply"
+		resType="json" notes="获取申请的联系人记录" state="1" requestName="GetContacts2ApplyParam"
+		resDataType="list" responseName="RUserContactBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 获取用户申请联系人记录 -->
+	<protocol name="getContacts2Invite" requestMapping="/v1/getContacts2Invite"
+		resType="json" notes="获取邀请的联系人记录" state="1" requestName="GetContacts2InviteParam"
+		resDataType="list" responseName="RUserContactBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+		</request>
+	</protocol>
+
+
+	<!-- 获取分组内联系人 -->
+	<protocol name="getContacts2Group" requestMapping="/v1/getContacts2Group"
+		resType="json" notes="获取分组内联系人" state="1" requestName="GetContacts2GroupParam"
+		resDataType="list" responseName="RUserContactBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="groupId" type="String" demoValue="1" notes="分组id">
+				<notEmpty message="分组不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 申请添加为联系人 -->
+	<protocol name="apply" requestMapping="/v1/apply" resType="json"
+		notes="申请添加为联系人" state="1" requestName="ApplyContactParam"
+		resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="remark" type="String" demoValue="同事" notes="添加备注">
+			</param>
+			<param name="userId" type="String" demoValue="3c05d94e91184272997ab2c0b7b54bb1"
+				notes="联系人id">
+				<notEmpty message="联系人不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 同意添加为联系人 -->
+	<protocol name="agree" requestMapping="/v1/agree" resType="json"
+		notes="同意添加为联系人" state="1" requestName="AgreeContactParam"
+		resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="aid" type="String" demoValue="2" notes="申请id">
+				<notEmpty message="申请不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 拒绝添加为联系人 -->
+	<protocol name="reject" requestMapping="/v1/reject" resType="json"
+		notes="拒绝添加为联系人" state="1" requestName="RejectContactParam"
+		resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="aid" type="String" demoValue="2" notes="申请id">
+				<notEmpty message="申请不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 删除联系人 -->
+	<protocol name="removeReq" requestMapping="/v1/removeReq"
+		resType="json" notes="删除联系人请求" state="1" requestName="RemoveContactReqParam"
+		resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="id" type="String" demoValue="3f45d94e91184272997ab2c0b7b54bb1"
+				notes="请求id">
+				<notEmpty message="请求id不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 删除联系人 -->
+	<protocol name="remove" requestMapping="/v1/remove" resType="json"
+		notes="删除联系人" state="1" requestName="RemoveContactParam" resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="userId" type="String" demoValue="3f45d94e91184272997ab2c0b7b54bb1"
+				notes="联系人id">
+				<notEmpty message="联系人不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+
+
+</protocols>

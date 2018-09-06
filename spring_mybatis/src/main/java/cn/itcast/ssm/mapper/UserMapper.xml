@@ -19,4 +19,9 @@
 	<select id="findUserById" parameterType="int" resultType="User">
 		SELECT * FROM USER WHERE id=#{value}
 	</select>
+	<delete id="deleteUserById" parameterType="int">
+		DELETE FROM USER WHERE id=#{value}
+	</delete>
+	
+	
 </mapper>

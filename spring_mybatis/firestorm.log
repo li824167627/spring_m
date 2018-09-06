@@ -1,0 +1,137 @@
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+DEBUG main org.springframework.core.env.MutablePropertySources - Adding [environmentProperties] PropertySource with lowest search precedence
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [db.properties]
+DEBUG main org.springframework.core.env.MutablePropertySources - Adding [localProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.driver' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.driver' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.driver' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'jdbc.driver' in any property source. Returning [null]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.driver' in [localProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'jdbc.driver' in [localProperties] with type [String] and value 'com.mysql.cj.jdbc.Driver'
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.url' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.url' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.url' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'jdbc.url' in any property source. Returning [null]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.url' in [localProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'jdbc.url' in [localProperties] with type [String] and value 'jdbc:mysql://localhost:3306/test?characterEncoding=utf-8'
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.username' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.username' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.username' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'jdbc.username' in any property source. Returning [null]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.username' in [localProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'jdbc.username' in [localProperties] with type [String] and value 'root'
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.password' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.password' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.password' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'jdbc.password' in any property source. Returning [null]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'jdbc.password' in [localProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'jdbc.password' in [localProperties] with type [String] and value '77585241'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+DEBUG main org.springframework.context.support.ClassPathXmlApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@1198b989]
+DEBUG main org.springframework.context.support.ClassPathXmlApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@10db82ae]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2353b3e6: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,userMapper,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'sqlSessionFactory'
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'sqlSessionFactory' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'sqlSessionFactory'
+DEBUG main org.apache.ibatis.io.ResolverUtil - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.ResolverUtil - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.ResolverUtil - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.ResolverUtil - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.ResolverUtil - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: Orders.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: OrdersCustom.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: User.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: UserCustom.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: UserQueryVo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Listing file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po/Orders.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po/Orders.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   4 :  cn/itcast/ssm/po/Orders  java/lang/Object id Ljava/lang/Integer; userId number Ljava/lang/String; 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   4 "  cn/itcast/ssm/po/OrdersCustom  cn/itcast/ssm/po/Orders username Ljava/lang/String; sex address <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po/User.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po/User.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   4 Q  cn/itcast/ssm/po/User  java/lang/Object  java/io/Serializable id I username Ljava/lang/String; sex birthday Ljava/util/Date; address <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   4   cn/itcast/ssm/po/UserCustom  cn/itcast/ssm/po/User <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/Users/lyn/software/eclipse-workspace/spring_mybatis/bin/cn/itcast/ssm/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   4 %  cn/itcast/ssm/po/UserQueryVo  java/lang/Object ids Ljava/util/List; 	Signature %Ljava/util/List<Ljava/lang/Integer;>; 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.po.Orders matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.po.OrdersCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.po.User matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.po.UserCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.po.UserQueryVo matches criteria [is assignable to Object]
+DEBUG main org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [config/mybatis/SqlMapConfig.xml]'
+DEBUG main org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'userMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'userMapper' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'userMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'userMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG main org.springframework.context.support.ClassPathXmlApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@117e949d]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userMapper'
+DEBUG main org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG main org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71c3b41] was not registered for synchronization because synchronization is not active
+DEBUG main org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG main org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://localhost:3306/test?characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+DEBUG main cn.itcast.ssm.mapper.UserMapper.deleteUserById - ==>  Preparing: DELETE FROM USER WHERE id=? 
+DEBUG main cn.itcast.ssm.mapper.UserMapper.deleteUserById - ==> Parameters: 6(Integer)
+DEBUG main cn.itcast.ssm.mapper.UserMapper.deleteUserById - <==    Updates: 1
+DEBUG main org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71c3b41]
+DEBUG main org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource

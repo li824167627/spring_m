@@ -1,0 +1,600 @@
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@28d25987 testClass = test, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4501b7af testClass = test, locations = '{classpath:applicationContext-dao.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [cn.itcast.ssm.mapper.test] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+DEBUG main org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@566776ad declaringClass = 'cn.itcast.ssm.mapper.test', classes = '{}', locations = '{classpath:applicationContext-dao.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+DEBUG main org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [cn.itcast.ssm.mapper.test]: using defaults.
+INFO main org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+INFO main org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@100fc185, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@643b1d11, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2ef5e5e3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@36d4b5c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6d00a15d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@51efea79]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4c70fda8 testClass = test, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@224edc67 testClass = test, locations = '{classpath:applicationContext-dao.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@4c70fda8 testClass = test, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@224edc67 testClass = test, locations = '{classpath:applicationContext-dao.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [cn.itcast.ssm.mapper.test] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+DEBUG main org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@13969fbe declaringClass = 'cn.itcast.ssm.mapper.test', classes = '{}', locations = '{classpath:applicationContext-dao.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+DEBUG main org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [cn.itcast.ssm.mapper.test]: using defaults.
+INFO main org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+INFO main org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5034c75a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@396a51ab, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@51081592, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7f9a81e8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@9629756, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@62ee68d8]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@28d25987 testClass = test, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4501b7af testClass = test, locations = '{classpath:applicationContext-dao.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@28d25987 testClass = test, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4501b7af testClass = test, locations = '{classpath:applicationContext-dao.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+DEBUG main org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [cn.itcast.ssm.mapper.test] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+DEBUG main org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@13969fbe declaringClass = 'cn.itcast.ssm.mapper.test', classes = '{}', locations = '{classpath:applicationContext-dao.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+DEBUG main org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [cn.itcast.ssm.mapper.test]: using defaults.
+INFO main org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+INFO main org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5034c75a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@396a51ab, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@51081592, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7f9a81e8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@9629756, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@62ee68d8]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@28d25987 testClass = test, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4501b7af testClass = test, locations = '{classpath:applicationContext-dao.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itcast.ssm.mapper.test]
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@28d25987 testClass = test, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4501b7af testClass = test, locations = '{classpath:applicationContext-dao.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Items  java/lang/Object id Ljava/lang/Integer; name Ljava/lang/String; price F detail pic 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4   !cn/itcast/ssm/bean/po/ItemsCustom  cn/itcast/ssm/bean/po/Items items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    "cn/itcast/ssm/bean/po/ItemsQueryVo  java/lang/Object items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Orders  java/lang/Object id Ljava/lang/Integer; userId number Ljava/lang/String; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 "  "cn/itcast/ssm/bean/po/OrdersCustom  cn/itcast/ssm/bean/po/Orders username Ljava/lang/String; sex address <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 V  cn/itcast/ssm/bean/po/User  java/lang/Object  java/io/Serializable serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    cn/itcast/ssm/bean/po/UserCustom  cn/itcast/ssm/bean/po/User serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 %  !cn/itcast/ssm/bean/po/UserQueryVo  java/lang/Object ids Ljava/util/List; 	Signature %Ljava/util/List<Ljava/lang/Integer;>; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 4  cn/itcast/ssm/bean/po/UUser  java/lang/Object id I phone_mobile Ljava/lang/String; login_password 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Items matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Orders matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.OrdersCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.User matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UUser matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Items  java/lang/Object id Ljava/lang/Integer; name Ljava/lang/String; price F detail pic 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4   !cn/itcast/ssm/bean/po/ItemsCustom  cn/itcast/ssm/bean/po/Items items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    "cn/itcast/ssm/bean/po/ItemsQueryVo  java/lang/Object items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Orders  java/lang/Object id Ljava/lang/Integer; userId number Ljava/lang/String; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 "  "cn/itcast/ssm/bean/po/OrdersCustom  cn/itcast/ssm/bean/po/Orders username Ljava/lang/String; sex address <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 V  cn/itcast/ssm/bean/po/User  java/lang/Object  java/io/Serializable serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    cn/itcast/ssm/bean/po/UserCustom  cn/itcast/ssm/bean/po/User serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 %  !cn/itcast/ssm/bean/po/UserQueryVo  java/lang/Object ids Ljava/util/List; 	Signature %Ljava/util/List<Ljava/lang/Integer;>; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 4  cn/itcast/ssm/bean/po/UUser  java/lang/Object id I phone_mobile Ljava/lang/String; login_password 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Items matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Orders matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.OrdersCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.User matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UUser matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Items  java/lang/Object id Ljava/lang/Integer; name Ljava/lang/String; price F detail pic 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4   !cn/itcast/ssm/bean/po/ItemsCustom  cn/itcast/ssm/bean/po/Items items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    "cn/itcast/ssm/bean/po/ItemsQueryVo  java/lang/Object items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Orders  java/lang/Object id Ljava/lang/Integer; userId number Ljava/lang/String; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 "  "cn/itcast/ssm/bean/po/OrdersCustom  cn/itcast/ssm/bean/po/Orders username Ljava/lang/String; sex address <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 V  cn/itcast/ssm/bean/po/User  java/lang/Object  java/io/Serializable serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    cn/itcast/ssm/bean/po/UserCustom  cn/itcast/ssm/bean/po/User serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 %  !cn/itcast/ssm/bean/po/UserQueryVo  java/lang/Object ids Ljava/util/List; 	Signature %Ljava/util/List<Ljava/lang/Integer;>; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 4  cn/itcast/ssm/bean/po/UUser  java/lang/Object id I phone_mobile Ljava/lang/String; login_password 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Items matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Orders matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.OrdersCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.User matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UUser matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsMapperCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsMapperCustom.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersMapperCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersMappercustom.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersMapperCustomTest.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper/ItemsMapperCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper/ItemsMapperCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4   &cn/itcast/ssm/mapper/ItemsMapperCustom  java/lang/Object 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper/ItemsMapperCustom.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper/ItemsMapperCustom.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper/OrdersMapperCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper/OrdersMapperCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4   'cn/itcast/ssm/mapper/OrdersMapperCustom  java/lang/Object findOrdersUser ()Ljava/util/List; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper/OrdersMappercustom.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper/OrdersMappercustom.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper/OrdersMapperCustomTest.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/mapper/OrdersMapperCustomTest.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 T  +cn/itcast/ssm/mapper/OrdersMapperCustomTest  java/lang/Object sqlSessionFactory -Lorg/apache/ibatis/session/SqlSessionFactory; <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.mapper.ItemsMapperCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.mapper.OrdersMapperCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.mapper.OrdersMapperCustomTest matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Items  java/lang/Object id Ljava/lang/Integer; name Ljava/lang/String; price F detail pic 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4   !cn/itcast/ssm/bean/po/ItemsCustom  cn/itcast/ssm/bean/po/Items items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    "cn/itcast/ssm/bean/po/ItemsQueryVo  java/lang/Object items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Orders  java/lang/Object id Ljava/lang/Integer; userId number Ljava/lang/String; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 "  "cn/itcast/ssm/bean/po/OrdersCustom  cn/itcast/ssm/bean/po/Orders username Ljava/lang/String; sex address <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 V  cn/itcast/ssm/bean/po/User  java/lang/Object  java/io/Serializable serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    cn/itcast/ssm/bean/po/UserCustom  cn/itcast/ssm/bean/po/User serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 %  !cn/itcast/ssm/bean/po/UserQueryVo  java/lang/Object ids Ljava/util/List; 	Signature %Ljava/util/List<Ljava/lang/Integer;>; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 4  cn/itcast/ssm/bean/po/UUser  java/lang/Object id I phone_mobile Ljava/lang/String; login_password 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Items matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Orders matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.OrdersCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.User matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UUser matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Items  java/lang/Object id Ljava/lang/Integer; name Ljava/lang/String; price F detail pic 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4   !cn/itcast/ssm/bean/po/ItemsCustom  cn/itcast/ssm/bean/po/Items items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    "cn/itcast/ssm/bean/po/ItemsQueryVo  java/lang/Object items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Orders  java/lang/Object id Ljava/lang/Integer; userId number Ljava/lang/String; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 "  "cn/itcast/ssm/bean/po/OrdersCustom  cn/itcast/ssm/bean/po/Orders username Ljava/lang/String; sex address <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 V  cn/itcast/ssm/bean/po/User  java/lang/Object  java/io/Serializable serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    cn/itcast/ssm/bean/po/UserCustom  cn/itcast/ssm/bean/po/User serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 %  !cn/itcast/ssm/bean/po/UserQueryVo  java/lang/Object ids Ljava/util/List; 	Signature %Ljava/util/List<Ljava/lang/Integer;>; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 4  cn/itcast/ssm/bean/po/UUser  java/lang/Object id I phone_mobile Ljava/lang/String; login_password 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Items matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Orders matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.OrdersCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.User matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UUser matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Items  java/lang/Object id Ljava/lang/Integer; name Ljava/lang/String; price F detail pic 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4   !cn/itcast/ssm/bean/po/ItemsCustom  cn/itcast/ssm/bean/po/Items items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    "cn/itcast/ssm/bean/po/ItemsQueryVo  java/lang/Object items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Orders  java/lang/Object id Ljava/lang/Integer; userId number Ljava/lang/String; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 "  "cn/itcast/ssm/bean/po/OrdersCustom  cn/itcast/ssm/bean/po/Orders username Ljava/lang/String; sex address <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 V  cn/itcast/ssm/bean/po/User  java/lang/Object  java/io/Serializable serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    cn/itcast/ssm/bean/po/UserCustom  cn/itcast/ssm/bean/po/User serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 %  !cn/itcast/ssm/bean/po/UserQueryVo  java/lang/Object ids Ljava/util/List; 	Signature %Ljava/util/List<Ljava/lang/Integer;>; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 4  cn/itcast/ssm/bean/po/UUser  java/lang/Object id I phone_mobile Ljava/lang/String; login_password 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Items matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Orders matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.OrdersCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.User matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UUser matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Items  java/lang/Object id Ljava/lang/Integer; name Ljava/lang/String; price F detail pic 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4   !cn/itcast/ssm/bean/po/ItemsCustom  cn/itcast/ssm/bean/po/Items items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    "cn/itcast/ssm/bean/po/ItemsQueryVo  java/lang/Object items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Orders  java/lang/Object id Ljava/lang/Integer; userId number Ljava/lang/String; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 "  "cn/itcast/ssm/bean/po/OrdersCustom  cn/itcast/ssm/bean/po/Orders username Ljava/lang/String; sex address <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 V  cn/itcast/ssm/bean/po/User  java/lang/Object  java/io/Serializable serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    cn/itcast/ssm/bean/po/UserCustom  cn/itcast/ssm/bean/po/User serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 %  !cn/itcast/ssm/bean/po/UserQueryVo  java/lang/Object ids Ljava/util/List; 	Signature %Ljava/util/List<Ljava/lang/Integer;>; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 4  cn/itcast/ssm/bean/po/UUser  java/lang/Object id I phone_mobile Ljava/lang/String; login_password 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Items matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Orders matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.OrdersCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.User matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UUser matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Items.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Items  java/lang/Object id Ljava/lang/Integer; name Ljava/lang/String; price F detail pic 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4   !cn/itcast/ssm/bean/po/ItemsCustom  cn/itcast/ssm/bean/po/Items items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    "cn/itcast/ssm/bean/po/ItemsQueryVo  java/lang/Object items Lcn/itcast/ssm/bean/po/Items; itemsCustom #Lcn/itcast/ssm/bean/po/ItemsCustom; <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/Orders.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :  cn/itcast/ssm/bean/po/Orders  java/lang/Object id Ljava/lang/Integer; userId number Ljava/lang/String; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 "  "cn/itcast/ssm/bean/po/OrdersCustom  cn/itcast/ssm/bean/po/Orders username Ljava/lang/String; sex address <init> ()V Code
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 V  cn/itcast/ssm/bean/po/User  java/lang/Object  java/io/Serializable serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4    cn/itcast/ssm/bean/po/UserCustom  cn/itcast/ssm/bean/po/User serialVersionUID J 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 %  !cn/itcast/ssm/bean/po/UserQueryVo  java/lang/Object ids Ljava/util/List; 	Signature %Ljava/util/List<Ljava/lang/Integer;>; 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/bin/cn/itcast/ssm/bean/po/UUser.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 4  cn/itcast/ssm/bean/po/UUser  java/lang/Object id I phone_mobile Ljava/lang/String; login_password 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Items matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Orders matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.OrdersCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.User matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserCustom matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserQueryVo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UUser matches criteria [is assignable to Object]
+DEBUG Test worker org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG Test worker org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG Test worker org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG Test worker org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG Test worker org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG Test worker org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: Items.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsCustom.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: ItemsQueryVo.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: Orders.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: OrdersCustom.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: UserCustom.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: UserQueryVo.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: UUser.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Listing file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/Items.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/Items.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/ItemsCustom.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/ItemsQueryVo.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/Orders.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/Orders.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 :
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/OrdersCustom.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 "
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/User.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/User.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 U
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/UserCustom.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/UserQueryVo.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 %
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/UUser.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/Users/lyn/software/eclipse-workspace/springMVC_Mybatis/build/classes/main/cn/itcast/ssm/bean/po/UUser.class
+DEBUG Test worker org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 4
+DEBUG Test worker org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Items matches criteria [is assignable to Object]
+DEBUG Test worker org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsCustom matches criteria [is assignable to Object]
+DEBUG Test worker org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.ItemsQueryVo matches criteria [is assignable to Object]
+DEBUG Test worker org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.Orders matches criteria [is assignable to Object]
+DEBUG Test worker org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.OrdersCustom matches criteria [is assignable to Object]
+DEBUG Test worker org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.User matches criteria [is assignable to Object]
+DEBUG Test worker org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserCustom matches criteria [is assignable to Object]
+DEBUG Test worker org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UserQueryVo matches criteria [is assignable to Object]
+DEBUG Test worker org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.itcast.ssm.bean.po.UUser matches criteria [is assignable to Object]

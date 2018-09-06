@@ -33,7 +33,7 @@ public class ItemsController1 implements Controller{
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("itmesList",itmesList);
 		
-		modelAndView.setViewName("/spring_mybatis/src/main/resources/jsp/itemsList.jsp");
+		modelAndView.setViewName("itemsList.jsp");
 		
 		return modelAndView;
 	}

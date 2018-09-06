@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<!-- namespace命名空间，作用是对SQL进行分类化管理，理解SQl隔离
-注意：使用mapper代理方法开发，namespace有特殊重要的作用 -->
+<!-- namespace命名空间，作用是对SQL进行分类化管理，理解SQl隔离 注意：使用mapper代理方法开发，namespace有特殊重要的作用 -->
 <mapper namespace="cn.itcast.ssm.mapper.ItemsMapperCustom">
-
-	<!-- 定义商品查询的sql片段 -->
-	<sql id="query_items_where">
-	<!-- 使用动态sql,通过if判断，满足条件进行sql拼接 -->
-	<!-- 商品查询条件通过ItemsQueryVo包装对象中itemsCustom属性传递 -->
-	<if test="itemsCustom!=null">
-		<if test="itemsCustom.name!=null and itemsCustom.name!=''">
-			items.name LIKE '%${itemsCustom.name}%'
-		</if>
-	</if> 
-		
-	</sql>
-
-	<select id="findItemsList" parameterType="cn.itcast.ssm.po.ItemsQueryVo" resultType="cn.itcast.ssm.po.ItemsCustom">
-			SELECT items.* FROM itmes
-		<where>
-			itmes.name LIKE '%笔记本%'
-		</where>
-		
+	<select id="findItemsList" parameterType="ItemsQueryVo" resultType="ItemsCustom">
+		SELECT * FROM itmes
 	</select>
+	<select id="findItemsById" parameterType="int" resultType="ItemsCustom">
+		SELECT * FROM itmes where
+		id=#{items.id}
+	</select>
+	<update id="updateItems" parameterType="Items">
+		UPDATE itmes SET name = #{itemsCustom.name},price = #{itemsCustom.price},detail=#{itemsCustom.detail},pic=#{itemsCustom.pic},createtime=#{itemsCustom.createtime}
+		WHERE id = #{itemsCustom.id}
+	</update>
+	<delete id="delectByPrimaryKey" parameterType="Items">
+		DELETE FROM itmes where
+		id=#{items.id}
+	</delete>
+	
+	
+	<!-- <insert id="addUser" parameterType="map">
+		insert into user_login (phone_mobile,login_password,register_time,user_code) values(#{phone_mobile},#{login_password},#{register_time},#{user_code})
+	</insert>
+	
+	用户名唯一性的判断
+	<select id="judgeUser" parameterType="String" resultType="com.register.vo.User">
+		select phone_mobile from user_login where phone_mobile=#{phone_mobile}
+	</select>
+	
+	用户登录的判断返回一个user给service处理
+	<select id="userLogin" parameterType="map" resultType="com.register.vo.User">
+		select phone_mobile,login_password from user_login where phone_mobile=#{phone_mobile} and login_password=#{login_password}
+	</select> -->
+	
 </mapper>

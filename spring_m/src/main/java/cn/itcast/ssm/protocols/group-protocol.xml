@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocols>
+
+	<!-- 获取用户所有分组 -->
+	<protocol name="getGroups2User" requestMapping="/v1/getGroups2User"
+		resType="json" notes="获取用户所有分组" state="1" requestName="GetGroups2UserParam"
+		resDataType="list" responseName="RUserGroupBean">
+		<request>
+			<param name="key" type="String" demoValue="15688888888" notes="模糊搜索按手机号、姓名、拼音">
+			</param>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 添加分组 -->
+	<protocol name="add" requestMapping="/v1/add" resType="json"
+		notes="添加分组" state="1" requestName="AddGroupParam" resDataType="object"
+		responseName="RUserGroupBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="name" type="String" demoValue="常联系" notes="分组名称">
+				<notEmpty message="分组名称不能为空"></notEmpty>
+			</param>
+			<param name="icon" type="String"
+				demoValue="%7B%22widh%22%3A100%2C%22height%22%3A100%2C%22key%22%3A1231%2C%22url%22%3A%22http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F00%2F69%2F66858PICNfJ_1024.jpg%22%7D"
+				notes="分组图标">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 编辑分组名称 -->
+	<protocol name="editName" requestMapping="/v1/editName"
+		resType="json" notes="编辑分组名称" state="1" requestName="EditGroupNameParam"
+		resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="groupId" type="String" demoValue="2" notes="分组id">
+				<notEmpty message="分组不能为空"></notEmpty>
+			</param>
+			<param name="name" type="String" demoValue="常联系" notes="分组名称">
+				<notEmpty message="分组名称不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 编辑分组ICON -->
+	<protocol name="editIcon" requestMapping="/v1/editIcon"
+		resType="json" notes="编辑分组图标" state="1" requestName="EditGroupIconParam"
+		resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="groupId" type="String" demoValue="2" notes="分组id">
+				<notEmpty message="分组不能为空"></notEmpty>
+			</param>
+			<param name="icon" type="String"
+				demoValue="%7B%22widh%22%3A100%2C%22height%22%3A100%2C%22key%22%3A1231%2C%22url%22%3A%22http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F00%2F69%2F66858PICNfJ_1024.jpg%22%7D"
+				notes="分组图标">
+				<notEmpty message="分组图标不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 删除分组 -->
+	<protocol name="remove" requestMapping="/v1/remove" resType="json"
+		notes="删除分组" state="1" requestName="RemoveGroupParam" resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="groupId" type="String" demoValue="2" notes="分组id">
+				<notEmpty message="分组不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 向分组添加联系人 -->
+	<protocol name="addUsers" requestMapping="/v1/addUsers"
+		resType="json" notes="向分组添加联系人" state="1" requestName="AddUsers2GroupParam"
+		resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="groupId" type="String" demoValue="12" notes="分组Id">
+				<notEmpty message="分组不能为空"></notEmpty>
+			</param>
+			<param name="userIds" type="String" demoValue="%5B'123'%2C'12414'%2C'1241'%5D"
+				notes="联系人id数组">
+				<notEmpty message="联系人不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 删除分组内联系人 -->
+	<protocol name="removeUsers" requestMapping="/v1/removeUsers"
+		resType="json" notes="删除分组内联系人" state="1" requestName="RemoveUsers2GroupParam"
+		resDataType="base">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="groupId" type="String" demoValue="12" notes="分组Id">
+				<notEmpty message="分组不能为空"></notEmpty>
+			</param>
+			<param name="userIds" type="String" demoValue="%5B'123'%2C'12414'%2C'1241'%5D"
+				notes="联系人id数组">
+				<notEmpty message="联系人不能为空"></notEmpty>
+			</param>
+		</request>
+	</protocol>
+
+
+
+</protocols>

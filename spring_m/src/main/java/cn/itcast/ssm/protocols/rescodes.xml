@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+
+	<result name="success">
+		<code>100</code>
+		<msg>操作成功</msg>
+	</result>
+
+	<result name="fail">
+		<code>101</code>
+		<msg>操作失败</msg>
+	</result>
+
+	<result name="token_fail">
+		<code>102</code>
+		<msg>会话过期</msg>
+	</result>
+
+	<result name="param_is_error">
+		<code>103</code>
+		<msg>%s不正确！</msg>
+	</result>
+
+	<result name="param_input_is_error">
+		<code>104</code>
+		<msg>[%s]输入错误！</msg>
+	</result>
+
+	<result name="param_input_not_null">
+		<code>105</code>
+		<msg>%s不能为空！</msg>
+	</result>
+
+	<result name="object_is_exist">
+		<code>106</code>
+		<msg>%s已经存在！</msg>
+	</result>
+
+	<result name="object_is_not_exist">
+		<code>107</code>
+		<msg>%s不存在！</msg>
+	</result>
+
+	<result name="error">
+		<code>108</code>
+		<msg>%s</msg>
+	</result>
+
+	<result name="login_account_password_error">
+		<code>109</code>
+		<msg>账号或密码错误</msg>
+	</result>
+
+
+	<result name="user_password_not_set">
+		<code>10001</code>
+		<msg>用户密码未设置,请使用验证码登陆</msg>
+	</result>
+
+	<result name="user_pwd_confirmpwd_not_equals">
+		<code>10002</code>
+		<msg>用户两次密码不一致</msg>
+	</result>
+
+	<result name="user_register_not_usepwd_login">
+		<code>10003</code>
+		<msg>新增注册用户不能用密码登录，请使用手机验证码登录</msg>
+	</result>
+
+	<result name="user_bind_phone">
+		<code>10004</code>
+		<msg>用户绑定的手机号</msg>
+	</result>
+
+	<result name="third_account_not_bind_phone">
+		<code>10005</code>
+		<msg>当前账号未绑定手机号</msg>
+	</result>
+
+	<result name="user_real_auth_going">
+		<code>10101</code>
+		<msg>用户实名认证中%s</msg>
+	</result>
+	<result name="user_real_auth_pass">
+		<code>10102</code>
+		<msg>用户实名认证通过%s</msg>
+	</result>
+	<result name="user_real_auth_not_pass">
+		<code>10103</code>
+		<msg>用户实名认证未通过%s</msg>
+	</result>
+	<result name="user_is_not_auth">
+		<code>10104</code>
+		<msg>用户未认证</msg>
+	</result>
+
+
+	<result name="sec_is_not_auth">
+		<code>10107</code>
+		<msg>用户未认证保安</msg>
+	</result>
+
+	<result name="sec_is_wait_auth">
+		<code>10105</code>
+		<msg>已提交保安认证，请等待审核</msg>
+	</result>
+
+	<result name="sec_auth_is_pass">
+		<code>10106</code>
+		<msg>已认证为保安</msg>
+	</result>
+
+
+
+
+
+	<result name="user_token_not_null">
+		<code>11001</code>
+		<msg>用户token不能为空</msg>
+	</result>
+
+	<result name="user_contact_add_not">
+		<code>12001</code>
+		<msg>未有这条添加好友记录</msg>
+	</result>
+
+	<result name="user_contact_hasAdd_record">
+		<code>12002</code>
+		<msg>申请已经发送，等待对方同意</msg>
+	</result>
+
+	<result name="user_group_member_is_exist">
+		<code>12501</code>
+		<msg>%s</msg>
+	</result>
+
+	<result name="user_is_not_contact">
+		<code>12003</code>
+		<msg>不是联系人</msg>
+	</result>
+
+	<result name="user_is_contact">
+		<code>12004</code>
+		<msg>已经是联系人</msg>
+	</result>
+
+	<result name="contact_is_refuse">
+		<code>12005</code>
+		<msg>已拒绝该联系人</msg>
+	</result>
+
+	<result name="group_is_not_user">
+		<code>12005</code>
+		<msg>这不是你的分组</msg>
+	</result>
+
+	<!-- 业主 -->
+	<result name="user_hold_not_set">
+		<code>15001</code>
+		<msg>%s物业地址未设置</msg>
+	</result>
+	<result name="user_hold_not_auth">
+		<code>15002</code>
+		<msg>%s业主未认证%s</msg>
+	</result>
+	<result name="user_hold_not_auth_pass">
+		<code>15003</code>
+		<msg>%s业主未认证通过%s</msg>
+	</result>
+	<result name="user_hold_has_bind">
+		<code>15004</code>
+		<msg>%s身份证号已经被绑定%s</msg>
+	</result>
+
+	<!-- 门禁 -->
+	<result name="user_access_has_agress">
+		<code>16001</code>
+		<msg>%s门禁已经同意</msg>
+	</result>
+	<result name="user_access_has_cancel">
+		<code>16002</code>
+		<msg>%s门禁已经取消</msg>
+	</result>
+	<result name="user_access_has_ignore">
+		<code>16003</code>
+		<msg>%s门禁已经忽略</msg>
+	</result>
+	<result name="user_access_not_agress">
+		<code>16004</code>
+		<msg>%s门禁未同意</msg>
+	</result>
+	<result name="user_access_address_not_set">
+		<code>16005</code>
+		<msg>%s门禁地址未设置</msg>
+	</result>
+	<result name="user_access_has_expire">
+		<code>16006</code>
+		<msg>门禁已经过期</msg>
+	</result>
+
+	<!-- 二维码 -->
+	<result name="access_visit_qrcode_invalid">
+		<code>16101</code>
+		<msg>%s二维码无效%s</msg>
+	</result>
+	<result name="access_visit_qrcode_info_error">
+		<code>16102</code>
+		<msg>%s二维码信息错误</msg>
+	</result>
+	<result name="access_visit_qrcode_info_invalid">
+		<code>16104</code>
+		<msg>%s拜访门禁信息无效%s</msg>
+	</result>
+
+
+
+	<!-- 手机验证码 -->
+	<result name="vcode_is_error">
+		<code>20001</code>
+		<msg>验证码不正确！</msg>
+	</result>
+
+	<result name="vcode_is_expire">
+		<code>20002</code>
+		<msg>验证码已经过期！</msg>
+	</result>
+
+	<result name="vcode_is_send">
+		<code>20003</code>
+		<msg>验证码已经发送！</msg>
+	</result>
+
+	<result name="vcode_in_limit">
+		<code>20004</code>
+		<msg>一分钟内限制发送短信次数！</msg>
+	</result>
+
+	<result name="checktoken_is_expire">
+		<code>21000</code>
+		<msg>验证手机token已过期</msg>
+	</result>
+
+
+	<result name="checktoken_is_error">
+		<code>21001</code>
+		<msg>验证手机验证码错误</msg>
+	</result>
+
+	<result name="version_is_lastest">
+		<code>30001</code>
+		<msg>当前已是最新版本</msg>
+	</result>
+
+	<result name="not_have_new_version">
+		<code>30002</code>
+		<msg>没有新的版本</msg>
+	</result>
+
+
+
+	<!-- 数据库新增、修改、删除、查询 -->
+	<result name="database_insert_fail">
+		<code>30001</code>
+		<msg>%s新增失败</msg>
+	</result>
+
+	<result name="database_update_fail">
+		<code>30002</code>
+		<msg>%s更新失败</msg>
+	</result>
+
+	<result name="database_delete_fail">
+		<code>30003</code>
+		<msg>%s删除失败</msg>
+	</result>
+
+</results>

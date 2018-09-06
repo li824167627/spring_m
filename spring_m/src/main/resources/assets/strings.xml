@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+
+	<string name="vcode_message_invite_tip">您的注册验证码是：%s，10分钟内有效！</string>
+	<string name="vcode_message_bind_tip">您的绑定手机验证码是：%s，10分钟内有效！</string>
+	<string name="msg_vcode_test">您好，您的验证码是%s</string>
+	<string name="msg_vcode_send">【智造大街服务平台】%s（动态验证码）请在%s分钟内完成操作，切勿将验证码泄露于他人。
+	</string>
+
+	<string name="security_staff_new_post_message">新的邮寄消息</string>
+	<string name="security_staff_send_post_message">业主【%s】有新的邮寄消息</string>
+
+	<string name="express_notice">快递%s</string>
+	<string name="express_received_notice">%s快递已经接单%s</string>
+	<string name="express_has_send">%s快递已经寄出%s</string>
+
+	<string name="express_pay_txt">快递支付</string>
+	<string name="express_pay_by_wallet">快递通过钱包支付</string>
+
+
+
+	<!-- 消息 -->
+	<!-- 实名认证 -->
+	<string name="user_auth_title">实名认证</string>
+	<string name="user_wait_auth">提示您，您已提交实名认证申请，请耐心等待！</string>
+
+	<!-- 保安认证 -->
+	<string name="sec_auth_title">保安认证</string>
+	<string name="sec_wait_auth">提示您，您已提交保安认证申请，请耐心等待！</string>
+
+	<!-- 好友 -->
+	<string name="contact_title">好友申请</string>
+	<string name="add_contact">提示您，%s向你申请添加好友！</string>
+	<string name="add_contact_success">提示您，%s通过了您的好友申请！</string>
+
+	<!-- 拜访 -->
+	<string name="visit_title">拜访申请</string>
+	<string name="has_visit">提示您，您收到%s的拜访申请，前去审核！</string>
+	<string name="visit_success">提示您，%s通过了您的拜访申请，当天可凭二维码通过%s门禁！</string>
+	<string name="visit_fail">提示您，因%s，您拜访%s的申请未通过！</string>
+	<string name="visit_cross">提示您，您的好友%s已通过%s小区,%s门岗！</string>
+
+	<!-- 来访邀请 -->
+	<string name="invite_title">来访邀请</string>
+	<string name="has_invite">提示您，您收到%s的邀请，当天可凭二维码通过%s门禁！</string>
+
+</strings>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocols>
+	<!-- 发送验证码 -->
+	<protocol name="sendVCode" requestMapping="/v1/sendVCode"
+		resType="json" notes="发送验证码" state="1" requestName="SendVCodeParam"
+		resDataType="base">
+		<request>
+			<param name="phone" type="String" demoValue="18553351967"
+				notes="手机号码">
+				<notEmpty message="手机号不能为空！" />
+				<pattern regexp="^(1)\\d{10}$" message="手机号格式不正确！" />
+			</param>
+			<param name="type" type="String" demoValue="1"
+				notes="类型，1登录注册2修改密码3绑定手机号4更新手机号">
+				<pattern regexp="^1|2|3|4$" message="类型不正确，1登录注册2修改密码3绑定手机号4更新手机号" />
+			</param>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="token:当绑定，更新手机号，修改密码，都需要传token">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 全国区域 -->
+	<protocol name="area" requestMapping="/v1/area" resType="json"
+		notes="全国区域" state="1" requestName="GetAreaParam" resDataType="object"
+		responseName="RAreaBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+		</request>
+	</protocol>
+
+	<!-- 版本升级 -->
+	<protocol name="upgradeVersion" requestMapping="/v1/upgradeVersion"
+		resType="json" notes="更新版本" state="1" requestName="UpgradeVersionParam"
+		resDataType="object" responseName="RVersionBean">
+		<request>
+			<param name="token" type="String" demoValue="5c05d94e91184272997ab2c0b7b54bb1"
+				notes="用户token">
+			</param>
+			<param name="vercode" type="int" demoValue="1" notes="版本号">
+			</param>
+		</request>
+	</protocol>
+
+
+</protocols>
