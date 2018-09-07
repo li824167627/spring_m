@@ -6,8 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import cn.itcast.ssm.model.UserBean;
+import cn.itcast.ssm.model.vo.UserAuthVo;
 
 public class UserDaoTest {
 	private ApplicationContext applicationContext;
@@ -21,8 +20,9 @@ public class UserDaoTest {
 	@Test
 	public void testSelectOneByPhone() throws Exception{
 		UserDao userDao = (UserDao) applicationContext.getBean("userDao");
-		UserBean userBean = userDao.selectOneByPhone("18010483452");
-		System.out.println(userBean);
+		UserAuthVo userAuthVo = userDao.selectOneByPhone("18010483452");
+		System.out.println(userAuthVo);
+		
 	}
 
 	@Test
